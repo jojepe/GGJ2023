@@ -5,27 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class Arrow : MonoBehaviour
 {
-    public void Room1()
-    {
-        SceneManager.LoadScene("Quarto1");
-        print("Entered Room 1");
-    }
+    public bool isLocked;
+    public string roomToEnter;
     
-    public void Room2()
+    public void EnterRoom()
     {
-        SceneManager.LoadScene("Quarto2");
-        print("Entered Room 2");
+        if (!isLocked)
+        {
+            SceneManager.LoadScene(roomToEnter);
+            print("Entered " + roomToEnter);
+        }
+        else
+        {
+            print(roomToEnter + " is Locked");
+        }
     }
-    
-    public void Room3()
-    {
-        SceneManager.LoadScene("Quarto3");
-        print("Entered Room 3");
-    }
-    
-    public void Room4()
-    {
-        SceneManager.LoadScene("Quarto4");
-        print("Entered Room 4");
-    }
+
 }

@@ -282,6 +282,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1039039965}
     m_Modifications:
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter
+      value: Quarto1
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene (2)
@@ -373,13 +377,24 @@ PrefabInstance:
     - target: {fileID: 7299154044084801469, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1754260450983838951, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      objectReference: {fileID: 985005761}
     - target: {fileID: 7299154044084801469, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Room1
+      value: EnterRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+--- !u!114 &985005761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+  m_PrefabInstance: {fileID: 985005760}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca94f3a0b86f7646b66f88f7a20fe15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1039039964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -489,6 +504,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1039039965}
     m_Modifications:
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter
+      value: Quarto3
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene (1)
@@ -580,13 +599,24 @@ PrefabInstance:
     - target: {fileID: 7299154044084801469, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1754260450983838951, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      objectReference: {fileID: 1197911245}
     - target: {fileID: 7299154044084801469, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Room4
+      value: EnterRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+--- !u!114 &1197911245 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+  m_PrefabInstance: {fileID: 1197911244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca94f3a0b86f7646b66f88f7a20fe15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2060996174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -594,6 +624,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1039039965}
     m_Modifications:
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter
+      value: Quarto4
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene
@@ -685,10 +719,21 @@ PrefabInstance:
     - target: {fileID: 7299154044084801469, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1754260450983838951, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      objectReference: {fileID: 2060996175}
     - target: {fileID: 7299154044084801469, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Room3
+      value: EnterRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+--- !u!114 &2060996175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+  m_PrefabInstance: {fileID: 2060996174}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca94f3a0b86f7646b66f88f7a20fe15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
