@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7299154044084801470}
   - component: {fileID: 7299154044084801469}
   - component: {fileID: -1714983752910282871}
+  - component: {fileID: 6800868074998349188}
   m_Layer: 5
   m_Name: ChangeScene
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 24, y: 20, z: 24, w: 24}
   m_Maskable: 1
@@ -146,4 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca94f3a0b86f7646b66f88f7a20fe15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
   roomToEnter: 
+--- !u!114 &6800868074998349188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7299154044084801459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b98c5f26fa70418163a8461add386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 7299154044084801470}
