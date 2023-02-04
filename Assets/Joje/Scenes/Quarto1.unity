@@ -149,6 +149,22 @@ PrefabInstance:
       propertyPath: roomToEnter
       value: Quarto2
       objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter._useConstant
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter._constantValue._sceneName
+      value: Assets/Joje/Scenes/Quarto2.unity
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter._constantValue._sceneIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter._constantValue._isSceneEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene
@@ -755,6 +771,14 @@ PrefabInstance:
     - target: {fileID: 1754260450983838948, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_Name
       value: Arrows
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754260450983838951, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: e07d9c623f9d59c4b98670b0ec6b4cf4, type: 3}
+    - target: {fileID: 1754260450983838951, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: e07d9c623f9d59c4b98670b0ec6b4cf4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
