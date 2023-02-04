@@ -13,5 +13,5 @@ public class UsableItem : ScriptableObject
 
     public int InteractionIndex => interactionIndex;
     public Sprite Icon => icon;
-
+    
 }
