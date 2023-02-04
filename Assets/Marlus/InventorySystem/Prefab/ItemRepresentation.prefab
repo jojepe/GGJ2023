@@ -90,4 +90,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   usableItem: {fileID: 0}
-  OnTryUseItem: {fileID: 0}
+  OnTryUseItem: {fileID: 11400000, guid: 844bec8e71322b34f92a16578aff1e05, type: 2}

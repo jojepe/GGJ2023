@@ -89,4 +89,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3b98c5f26fa70418163a8461add386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lupa: {fileID: 70861889813757978}
+  image: {fileID: 70861889813757978}

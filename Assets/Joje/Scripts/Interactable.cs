@@ -8,26 +8,37 @@ using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public Image lupa;
+    public Image image;
 
-    private Color lupaColor;
+    private Color imageColor;
     
     private void Start()
     {
-        Color lupaColor = lupa.color;
+        Color imageColor = image.color;
+        HideVisualization();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        lupaColor.a = 1f;
-        lupa.color = lupaColor;
+        ShowVisualization();
         print("Hover");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        lupaColor.a = 0f;
-        lupa.color = lupaColor;
+        HideVisualization();
         print("HoverOut");
+    }
+
+    private void ShowVisualization()
+    {
+        imageColor.a = 1f;
+        image.color = imageColor;
+    }
+
+    private void HideVisualization()
+    {
+        imageColor.a = 0f;
+        image.color = imageColor;
     }
 }

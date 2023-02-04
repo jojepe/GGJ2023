@@ -12,5 +12,6 @@ public class UsableItem : ScriptableObject
     [SerializeField] private int interactionIndex;
 
     public int InteractionIndex => interactionIndex;
+    public Sprite Icon => icon;
 
 }

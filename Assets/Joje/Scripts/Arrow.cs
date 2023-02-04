@@ -28,7 +28,8 @@ public class Arrow : MonoBehaviour
         if (this.interactionIndex == interactionIndex)
         {
             isLocked = false;
-            print("Have the door been unlocked: " + !isLocked);
+            print($"The door which index is: {this.interactionIndex} has been unlocked");
+            print("It´s name is: " + gameObject.name);
         }
     }
 
