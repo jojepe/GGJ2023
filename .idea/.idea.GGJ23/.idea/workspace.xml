@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76ec879a-f673-4ac3-a21a-fdd8cfca3f0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Joje/Scripts/DragAndDrop.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Joje/Scripts/DragAndDrop.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Joje/Scripts/Page.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Joje/Scripts/Page.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/PageBoard.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/PageBoard/Page.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/PageBoard/Page.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/PageBoard/PageBoard.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/PageBoard/PageBoard.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ23/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ23/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Joje/Prefabs/Arrow/ChangeScene.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/Arrow/ChangeScene.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Joje/Prefabs/Arrow/investigable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Joje/Prefabs/Arrow/investigable.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Joje/Scenes/Quarto1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Joje/Scenes/Quarto1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Joje/Scripts/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Joje/Scripts/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Joje/Scripts/Page.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Joje/Scripts/Page.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1675386235588" duration="18000" />
       <workItem from="1675386262718" duration="73000" />
       <workItem from="1675465725823" duration="4701000" />
-      <workItem from="1675513804354" duration="6713000" />
+      <workItem from="1675513804354" duration="8462000" />
     </task>
     <servers />
   </component>

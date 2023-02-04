@@ -5,6 +5,11 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
 {
     public GameObject image;
     public GameObject buttons;
+    [Header("ScreenLimit")] 
+    public int maxX;
+    public int minX;
+    public int maxY;
+    public int minY;
     private RectTransform draggingObject;
 
     private void Awake()
@@ -17,6 +22,10 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
         if (RectTransformUtility.ScreenPointToWorldPointInRectangle(draggingObject, eventData.position,
                 eventData.pressEventCamera, out var globalMousePosition))
         {
+            if (globalMousePosition.x > maxX || globalMousePosition.x < minX || globalMousePosition.y > maxY || globalMousePosition.y < minY)
+            {
+                return;
+            }
             draggingObject.position = globalMousePosition;
             print(draggingObject.position);
         }
