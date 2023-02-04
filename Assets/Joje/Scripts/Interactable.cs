@@ -15,19 +15,30 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     private void Start()
     {
         Color imageColor = image.color;
+        HideVisualization();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        imageColor.a = 1f;
-        image.color = imageColor;
+        ShowVisualization();
         print("Hover");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        HideVisualization();
+        print("HoverOut");
+    }
+
+    private void ShowVisualization()
+    {
+        imageColor.a = 1f;
+        image.color = imageColor;
+    }
+
+    private void HideVisualization()
+    {
         imageColor.a = 0f;
         image.color = imageColor;
-        print("HoverOut");
     }
 }

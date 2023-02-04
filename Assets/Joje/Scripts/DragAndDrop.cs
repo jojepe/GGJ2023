@@ -1,9 +1,12 @@
 using System;
+using ScriptableObjectArchitecture;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, ISelectHandler
 {
+    [SerializeField] UnityEvent OnUIElementReleased;
     private RectTransform draggingObject;
 
     private void Awake()
@@ -22,16 +25,14 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        throw new NotImplementedException();
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        throw new NotImplementedException();
+        OnUIElementReleased.Invoke();
     }
 
     public void OnSelect(BaseEventData eventData)
     {
-        throw new NotImplementedException();
     }
 }
