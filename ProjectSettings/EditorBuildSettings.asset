@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joje/Scenes/Quarto4.unity
     guid: 4158daa5d08a37742aecf411b69448a5
+  - enabled: 1
+    path: Assets/Joje/EndScenes/WinGame.unity
+    guid: 55b156e67a695ab4798dd88afc68f8c5
   m_configObjects: {}
