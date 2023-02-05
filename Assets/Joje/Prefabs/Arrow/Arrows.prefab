@@ -113,19 +113,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: isLocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: interactionIndex
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
-      propertyPath: roomToEnter.sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: d22f74c9822d2694295ba128a0463b4d, type: 3}
-    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
-      propertyPath: roomToEnter.sceneAssetGuidHex
-      value: d22f74c9822d2694295ba128a0463b4d
       objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
@@ -235,19 +227,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: isLocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: interactionIndex
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
-      propertyPath: roomToEnter.sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: 1805603ed3576b94c82efa5224ba6e6e, type: 3}
-    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
-      propertyPath: roomToEnter.sceneAssetGuidHex
-      value: 1805603ed3576b94c82efa5224ba6e6e
       objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
@@ -353,7 +337,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: isLocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: interactionIndex
@@ -362,10 +346,10 @@ PrefabInstance:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: roomToEnter.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: e07d9c623f9d59c4b98670b0ec6b4cf4, type: 3}
+      objectReference: {fileID: 102900000, guid: 5734a1b20fe270a42be2a6feb762f9c1, type: 3}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: roomToEnter.sceneAssetGuidHex
-      value: e07d9c623f9d59c4b98670b0ec6b4cf4
+      value: 5734a1b20fe270a42be2a6feb762f9c1
       objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
@@ -475,7 +459,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: isLocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: interactionIndex
@@ -484,10 +468,10 @@ PrefabInstance:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: roomToEnter.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 4158daa5d08a37742aecf411b69448a5, type: 3}
+      objectReference: {fileID: 102900000, guid: 5734a1b20fe270a42be2a6feb762f9c1, type: 3}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: roomToEnter.sceneAssetGuidHex
-      value: 4158daa5d08a37742aecf411b69448a5
+      value: 5734a1b20fe270a42be2a6feb762f9c1
       objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name

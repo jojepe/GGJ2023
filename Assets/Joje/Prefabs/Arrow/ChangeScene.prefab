@@ -152,8 +152,8 @@ MonoBehaviour:
   unlockedIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   isLocked: 0
   roomToEnter:
-    sceneAsset: {fileID: 0}
-    sceneAssetGuidHex: 00000000000000000000000000000000
+    sceneAsset: {fileID: 102900000, guid: 5734a1b20fe270a42be2a6feb762f9c1, type: 3}
+    sceneAssetGuidHex: 5734a1b20fe270a42be2a6feb762f9c1
   interactionIndex: 0
   OnRoomUnlocked: {fileID: 11400000, guid: 0e6c69c7ce2cc854cb3e4fe6a977bc13, type: 2}
 --- !u!114 &6800868074998349188
