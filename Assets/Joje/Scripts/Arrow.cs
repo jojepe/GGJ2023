@@ -1,10 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Marlus.InventorySystem.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 using SceneReference = Eflatun.SceneReference.SceneReference;
 
 [RequireComponent(typeof(Image))]
@@ -19,6 +18,7 @@ public class Arrow : MonoBehaviour
     public bool isLocked;
     public SceneReference roomToEnter;
     public int interactionIndex;
+    public ObjectGameEvent OnRoomUnlocked;
     
     private void Start()
     {
@@ -41,14 +41,28 @@ public class Arrow : MonoBehaviour
         }
     }
 
-    public void TryUnlockRoom(int interactionIndex)
+    public void TryUnlockRoom(Object sentUsableItemRepresentation)
     {
-        if (this.interactionIndex == interactionIndex)
+        var usableItemRepresentation = (UsableItemRepresentation)sentUsableItemRepresentation;
+        var usableItem = usableItemRepresentation.UsableItem;
+        if (this.interactionIndex == usableItem.InteractionIndex && isLocked)
         {
             isLocked = false;
+            OnRoomUnlocked.Raise();
             image.sprite = unlockedIcon;
-            print($"The door which index is: {this.interactionIndex} has been unlocked");
-            print("It´s name is: " + gameObject.name);
+            if (usableItem.CurrentQuantity > 1)
+            {
+                usableItem.ReduceQuantity();
+                usableItemRepresentation.ResetPositionToInventory();
+            }
+            else
+            {
+                Destroy(usableItemRepresentation.gameObject);
+            }
+        }
+        else
+        {
+            usableItemRepresentation.ResetPositionToInventory();
         }
     }
 

@@ -1,23 +1,36 @@
+using System;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Object = UnityEngine.Object;
 
 namespace Marlus.InventorySystem.Scripts
 {
     public class InventoryManager : MonoBehaviour
     {
-        [SerializeField] private UsableItemRepresentation[] usableItemSlots;
+        [SerializeField] private Transform[] usableItemSlots;
+        private GameObject[] usableItems;
+        [SerializeField] private GameObject usableItemPrefab;
 
-        private bool IsEmpty(int index) => !usableItemSlots[index].CanBeUsed;
+        private void Start()
+        {
+            usableItems = new GameObject[usableItemSlots.Length];
+        }
 
         public void TryInsertItem(Object usableItemGenericObject)
         {
-            foreach (var usableItemSlot in usableItemSlots)
+            for (int i = 0; i < usableItemSlots.Length; i++)
             {
-                if (!usableItemSlot.CanBeUsed)
+                var usableItem = usableItems[i];
+                var usableItemSlot = usableItemSlots[i];
+                if (usableItemSlot.childCount == 0)
                 {
                     var usableItemCollectable = (UsableItemCollectable)usableItemGenericObject;
-                    usableItemSlot.SetItemProperties(usableItemCollectable.UsableItem);
+                    usableItem = Instantiate(usableItemPrefab, usableItemSlot, false); 
+                    if (usableItem.TryGetComponent(out UsableItemRepresentation item))
+                    {
+                        item.SetItemProperties(usableItemCollectable.UsableItem);
+                    }
                     Destroy(usableItemCollectable.gameObject);
-                    Debug.Log("aaa");
                     break;
                 }
             }

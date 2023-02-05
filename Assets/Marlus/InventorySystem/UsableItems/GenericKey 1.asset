@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: GenericKey1
   icon: {fileID: 21300000, guid: b77456d8904a1074ebeec045ccbd23a8, type: 3}
-  quantity: 1
-  interactionIndex: 1
+  initialQuantity: 1
+  currentQuantity: 0
+  interactionIndex: 88
