@@ -36,7 +36,7 @@ namespace Marlus.InventorySystem.Scripts
                         item.SetItemProperties(usableItemCollectable.UsableItem);
                     }
 
-                    inventory.usableItems.Add(usableItemCollectable.UsableItem);
+                    inventory.Add(usableItemCollectable.UsableItem);
                     Destroy(usableItemCollectable.gameObject);
                     break;
                 }

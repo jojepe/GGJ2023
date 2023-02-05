@@ -1,8 +1,10 @@
+using Marlus.InventorySystem.Scripts;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandler, IPointerDownHandler
 {
+    public UsableItem usableItem;
     public GameObject image;
     public GameObject buttons;
     [Header("ScreenLimit")] 
@@ -15,6 +17,7 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
     private void Awake()
     {
         draggingObject = transform as RectTransform;
+        image.SetActive(usableItem.hasBeenSet ? true : false);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -40,7 +43,10 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
 
     public void OnSelect(BaseEventData eventData)
     {
-        buttons.SetActive(true);
+        if (image.activeSelf == true)
+        {
+            buttons.SetActive(true);
+        }
     }
     
     public void OnDeselect(BaseEventData eventData)
@@ -56,6 +62,18 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
     public void rotateLeft()
     {
         image.transform.eulerAngles += new Vector3(0,0,22.5f);
+    }
+
+    public void TryShow(Object _object)
+    {
+        var message = (UsableItemRepresentation)_object;
+        if (message.UsableItem.InteractionIndex == usableItem.InteractionIndex)
+        {
+            image.SetActive(true);
+            message.UsableItem.hasBeenSet = true;
+        }
+        message.UsableItem._inventory.usableItems.Clear();
+        Destroy(message.gameObject);
     }
     
 }

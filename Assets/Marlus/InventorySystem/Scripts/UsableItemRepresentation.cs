@@ -1,3 +1,4 @@
+using System;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,6 +57,5 @@ namespace Marlus.InventorySystem.Scripts
         {
             transform.position = transform.parent.position;
         }
-
     }
 }

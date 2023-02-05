@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Marlus.InventorySystem.ScriptableObjects;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -13,6 +14,9 @@ public class UsableItem : ScriptableObject
     [SerializeField] private int initialQuantity = 1;
     [SerializeField] private int currentQuantity;
     [SerializeField] private int interactionIndex;
+    public Inventory _inventory;
+    public bool hasBeenCollected = false;
+    public bool hasBeenSet = false;
 
     public int InteractionIndex => interactionIndex;
     public Sprite Icon => icon;
@@ -21,11 +25,14 @@ public class UsableItem : ScriptableObject
     public void OnEnable()
     {
         currentQuantity = initialQuantity;
+        hasBeenCollected = false;
+        hasBeenSet = false;
     }
 
     public void ReduceQuantity()
     {
         currentQuantity--;
     }
+    
 
 }

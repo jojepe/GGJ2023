@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 206d599d6b827f140ac332181d422e02, type: 3}
-  m_Name: GenericKey 2
+  m_Name: Pai
   m_EditorClassIdentifier: 
-  name: GenericKey2
-  icon: {fileID: 21300000, guid: 68e5a78013e33f247822a837e55b0ab4, type: 3}
+  name: 
+  icon: {fileID: 21300000, guid: 2ee4091529a6648458203561869373e8, type: 3}
   initialQuantity: 1
-  currentQuantity: 0
-  interactionIndex: 2
+  currentQuantity: 1
+  interactionIndex: 8

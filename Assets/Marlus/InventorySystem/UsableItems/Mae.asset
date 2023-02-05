@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aaea3f6daed4f5892033b3bd23eab9d, type: 3}
-  m_Name: Inventory
+  m_Script: {fileID: 11500000, guid: 206d599d6b827f140ac332181d422e02, type: 3}
+  m_Name: Mae
   m_EditorClassIdentifier: 
-  usableItems:
-  - {fileID: 11400000, guid: 5c2b60192e323404d9d0179b4eb0f46f, type: 2}
+  name: 
+  icon: {fileID: 21300000, guid: 8cf583fc7f3c30a4cba44f7791fbacb8, type: 3}
+  initialQuantity: 1
+  currentQuantity: 1
+  interactionIndex: 4

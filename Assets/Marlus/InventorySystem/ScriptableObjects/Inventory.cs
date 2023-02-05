@@ -10,6 +10,17 @@ namespace Marlus.InventorySystem.ScriptableObjects
     {
         public List<UsableItem> usableItems;
 
+        public void Add(UsableItem usableItem)
+        {
+            usableItem._inventory = this;
+            usableItems.Add(usableItem);
+            usableItem.hasBeenCollected = true;
+        }
+
+        public void Remove(UsableItem usableItem)
+        {
+            usableItems.Remove(usableItem);
+        }
         public void OnEnable()
         {
             usableItems.Clear();

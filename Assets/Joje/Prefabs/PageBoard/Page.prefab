@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 1715878574980955591}
   - component: {fileID: 1715878574980955586}
   - component: {fileID: 1715878574980955589}
+  - component: {fileID: 7930664392063368193}
   m_Layer: 5
   m_Name: Page
   m_TagString: Untagged
@@ -129,6 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768b66ab6de6d2540a66e38c3c1c49ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIndex: 0
   image: {fileID: 1715878574970501155}
   buttons: {fileID: 1715878576919043384}
   maxX: 1820
@@ -173,6 +175,39 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7930664392063368193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715878574980955593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75cfec541807964a9e0c8e7a9eff17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: d47c1ae0bfe74c8418c689e8b2862246, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1715878574980955591}
+        m_TargetAssemblyTypeName: Page, Assembly-CSharp
+        m_MethodName: TryShow
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: {fileID: 0}
 --- !u!1 &1715878576654995817
 GameObject:
   m_ObjectHideFlags: 0

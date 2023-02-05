@@ -11,6 +11,10 @@ public class UsableItemCollectable : MonoBehaviour
 
     private void Start()
     {
+        if (usableItem.hasBeenCollected)
+        {
+            Destroy(this.gameObject);
+        }
         if (TryGetComponent(out renderer))
         {
             SetIcon();
