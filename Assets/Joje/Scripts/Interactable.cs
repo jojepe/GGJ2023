@@ -34,7 +34,7 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     private void HideVisualization()
     {
-        imageColor.a = 0f;
+        imageColor.a = 0.5f;
         image.color = imageColor;
     }
 }

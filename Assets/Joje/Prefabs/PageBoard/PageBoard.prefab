@@ -74,7 +74,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!114 &3888309849170589286
 MonoBehaviour:
@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 461301d2bb8ad6f46a851bf527f5d66f, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Jaqueline
@@ -501,6 +505,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b393c7371249374fad51dd0cc594305, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Tio
@@ -623,6 +631,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c2b60192e323404d9d0179b4eb0f46f, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Roberto
@@ -749,6 +761,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 80b38826afd6e4e4eb3c480d9ba066c7, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Marina
@@ -871,6 +887,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 5e733d5ea03fdf0499648f4b6b158ece, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Tia
@@ -993,6 +1013,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: d1a487a6ea01b3743adb77f87f686964, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Irmao
@@ -1115,6 +1139,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 844c7522b8242c64b99da7f4c25c3f66, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Marcelo
@@ -1237,6 +1265,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 3278b63c7c3309e4f9e4e1765ede6717, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Pai
@@ -1359,6 +1391,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 66034c06eed690a44b0451096aff8a10, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Vovo
@@ -1481,6 +1517,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 34fc99718332d3442be32d4b1535f1fb, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Luiz
@@ -1603,6 +1643,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 650b3b8a32aaedf49a48d11ffa53ca65, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Rosemary
@@ -1725,6 +1769,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: ee910df9634c94340950f79646723a7f, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Mae
@@ -1847,6 +1895,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: e97977b8aa05c974baf47124c19efb06, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Vo
@@ -1969,6 +2021,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1715878574980955591, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
+      propertyPath: usableItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 37cc1345ca75db24691aaf93642940fc, type: 2}
     - target: {fileID: 1715878574980955593, guid: b0f674a3de7a8a64da6810684789aa8e, type: 3}
       propertyPath: m_Name
       value: Manuel

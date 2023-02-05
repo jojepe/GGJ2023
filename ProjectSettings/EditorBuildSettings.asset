@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/2.unity
     guid: d22f74c9822d2694295ba128a0463b4d
   - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 0
     path: Assets/Joje/Scenes/BaseRooms/Cozinha.unity
     guid: e07d9c623f9d59c4b98670b0ec6b4cf4
   - enabled: 1
@@ -20,25 +20,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/3.unity
     guid: 4158daa5d08a37742aecf411b69448a5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Marlus/InventorySystem/Scenes/Left.unity
     guid: 558e8d30992af49468e9cd09a82fa228
-  - enabled: 1
+  - enabled: 0
     path: Assets/Marlus/InventorySystem/Scenes/Up.unity
     guid: 2fb6b4f48640ee94bb122223dd3fda3b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Marlus/InventorySystem/Scenes/Right.unity
     guid: ee361d314b2ef5840b4de3c55d6beca1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Marlus/InventorySystem/Scenes/Down.unity
     guid: ed9e8cc7e37d9734389667b8bd81f0ec
-  - enabled: 1
+  - enabled: 0
     path: Assets/Marlus/InventorySystem/Scenes/InventoryTesting.unity
     guid: 5734a1b20fe270a42be2a6feb762f9c1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Joje/Scenes/Wall.unity
     guid: 675a4c4262ceef94f853a729fdf09640
   - enabled: 1
     path: Assets/Joje/Scenes/BaseItemCollection.unity
     guid: 1ae5f225967b48243b70810d89c89c11
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/1.unity
+    guid: 4e3070876d849bb448cdd1efd44d0418
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/7.unity
+    guid: eb98f06db0b9fab49a9861a7023bd414
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/5.unity
+    guid: 4651c38d0708d1c4bbdd8c8df046b6b3
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/6.unity
+    guid: 4aa76b5188b3fc14b95b76ffef6876e6
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/8.unity
+    guid: 5a17e23d9e0f460438de159837b9aca1
   m_configObjects: {}
