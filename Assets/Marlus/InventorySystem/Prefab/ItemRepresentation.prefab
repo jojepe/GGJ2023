@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4885446593450169575}
   - component: {fileID: 6831532488622689277}
   - component: {fileID: 8873607083811407591}
+  - component: {fileID: -4837579457775391079}
   m_Layer: 5
   m_Name: ItemRepresentation
   m_TagString: Untagged
@@ -89,5 +90,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2deed5aa9349af89578e97a18fb5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usableItem: {fileID: 0}
-  OnTryUseItem: {fileID: 11400000, guid: 844bec8e71322b34f92a16578aff1e05, type: 2}
+  OnTryUseItem: {fileID: 11400000, guid: d47c1ae0bfe74c8418c689e8b2862246, type: 2}
+--- !u!114 &-4837579457775391079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055845303336255773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f081d35554273d40bb655ee3b348960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnUIElementReleased:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8873607083811407591}
+        m_TargetAssemblyTypeName: Marlus.InventorySystem.Scripts.UsableItemRepresentation,
+          Assembly-CSharp
+        m_MethodName: TryUseItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

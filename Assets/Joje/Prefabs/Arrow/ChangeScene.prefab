@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7299154044084801469}
   - component: {fileID: -1714983752910282871}
   - component: {fileID: 6800868074998349188}
+  - component: {fileID: 3212103475534237756}
   m_Layer: 5
   m_Name: ChangeScene
   m_TagString: Untagged
@@ -147,11 +148,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aca94f3a0b86f7646b66f88f7a20fe15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockedIcon: {fileID: 21300000, guid: 0525793900d728a42936791a8a6de63b, type: 3}
+  unlockedIcon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   isLocked: 0
   roomToEnter:
     sceneAsset: {fileID: 0}
     sceneAssetGuidHex: 00000000000000000000000000000000
   interactionIndex: 0
+  OnRoomUnlocked: {fileID: 11400000, guid: 0e6c69c7ce2cc854cb3e4fe6a977bc13, type: 2}
 --- !u!114 &6800868074998349188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,3 +169,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 7299154044084801470}
+--- !u!114 &3212103475534237756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7299154044084801459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e75cfec541807964a9e0c8e7a9eff17d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: d47c1ae0bfe74c8418c689e8b2862246, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1714983752910282871}
+        m_TargetAssemblyTypeName: Arrow, Assembly-CSharp
+        m_MethodName: TryUnlockRoom
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _debugValue: {fileID: 0}
