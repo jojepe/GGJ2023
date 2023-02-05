@@ -11,6 +11,7 @@ public class NameInput : MonoBehaviour
     public Image picture;
     [Header("Input Field")] 
     public GameObject field;
+    public Book book;
     
     private string input;
 
@@ -23,6 +24,7 @@ public class NameInput : MonoBehaviour
             field.SetActive(false);
             print("Disable Image");
             picture.gameObject.SetActive(true);
+            book.rightAwnser();
         }
     }
 }
