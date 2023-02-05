@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1754260450983838944}
   - component: {fileID: 1754260450983838945}
   - component: {fileID: 1754260450983838950}
-  - component: {fileID: 1754260450983838951}
   m_Layer: 5
   m_Name: Arrows
   m_TagString: Untagged
@@ -105,23 +104,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1754260450983838951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754260450983838948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca94f3a0b86f7646b66f88f7a20fe15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isLocked: 0
-  roomToEnter:
-    sceneAsset: {fileID: 0}
-    sceneAssetGuidHex: 00000000000000000000000000000000
-  interactionIndex: 0
 --- !u!1001 &102024245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,12 +112,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1754260450983838947}
     m_Modifications:
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
-      propertyPath: roomToEnter.sceneAsset
-      value: 
-      objectReference: {fileID: 102900000, guid: d22f74c9822d2694295ba128a0463b4d, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
-      propertyPath: roomToEnter.sceneAssetGuidHex
-      value: d22f74c9822d2694295ba128a0463b4d
+      propertyPath: interactionIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
@@ -243,6 +225,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1754260450983838947}
     m_Modifications:
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: interactionIndex
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene_Right
@@ -345,6 +335,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1754260450983838947}
     m_Modifications:
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: interactionIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 5734a1b20fe270a42be2a6feb762f9c1, type: 3}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 5734a1b20fe270a42be2a6feb762f9c1
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene_Left
@@ -451,6 +457,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1754260450983838947}
     m_Modifications:
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: interactionIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 5734a1b20fe270a42be2a6feb762f9c1, type: 3}
+    - target: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 5734a1b20fe270a42be2a6feb762f9c1
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154044084801459, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
       propertyPath: m_Name
       value: ChangeScene_Down

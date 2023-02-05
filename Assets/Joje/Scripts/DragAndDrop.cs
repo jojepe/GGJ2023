@@ -1,5 +1,3 @@
-using System;
-using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
