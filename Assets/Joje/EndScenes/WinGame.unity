@@ -218,7 +218,7 @@ RectTransform:
   m_GameObject: {fileID: 891561185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8131, y: 1.8131, z: 1.8131}
+  m_LocalScale: {x: 1.3535, y: 1.3535, z: 1.3535}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1272879908}
@@ -226,8 +226,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14, y: 359}
-  m_SizeDelta: {x: 994.2109, y: 50}
+  m_AnchoredPosition: {x: -16.2094, y: 0}
+  m_SizeDelta: {x: 1341.4412, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891561187
 MonoBehaviour:
@@ -249,10 +249,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s muito esfor\xE7o, voc\xEA conseguiu lembrar por mais um dia"
+  m_text: vocE conseguiu lembrar por mais um dia
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6f32d52dd0fa2534594318d4f652ba76, type: 2}
+  m_sharedMaterial: {fileID: 3706126964614835823, guid: 6f32d52dd0fa2534594318d4f652ba76, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

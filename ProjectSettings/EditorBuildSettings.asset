@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joje/EndScenes/WinGame.unity
     guid: 55b156e67a695ab4798dd88afc68f8c5
+  - enabled: 1
+    path: Assets/Joje/EndScenes/EndGame.unity
+    guid: 7db1c736ec43aaa46ac9173e6fa01919
   m_configObjects: {}
