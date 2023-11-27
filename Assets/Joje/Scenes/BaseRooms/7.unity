@@ -793,10 +793,10 @@ PrefabInstance:
     - target: {fileID: 7508388282090750144, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: roomToEnter.sceneAsset
       value: 
-      objectReference: {fileID: 102900000, guid: 4651c38d0708d1c4bbdd8c8df046b6b3, type: 3}
+      objectReference: {fileID: 102900000, guid: 1805603ed3576b94c82efa5224ba6e6e, type: 3}
     - target: {fileID: 7508388282090750144, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: roomToEnter.sceneAssetGuidHex
-      value: 4651c38d0708d1c4bbdd8c8df046b6b3
+      value: 1805603ed3576b94c82efa5224ba6e6e
       objectReference: {fileID: 0}
     - target: {fileID: 7508388282820309096, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: roomToEnter.sceneAsset

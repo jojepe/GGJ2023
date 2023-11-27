@@ -552,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1754260450983838947, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1754260450983838947, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_AnchorMax.x
@@ -669,6 +669,14 @@ PrefabInstance:
     - target: {fileID: 7299154045108035677, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508388283936067055, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: eb98f06db0b9fab49a9861a7023bd414, type: 3}
+    - target: {fileID: 7508388283936067055, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: eb98f06db0b9fab49a9861a7023bd414
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
@@ -1392,7 +1400,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1841589751351635325
 PrefabInstance:
