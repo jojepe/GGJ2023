@@ -29,7 +29,7 @@ public class NameInput : MonoBehaviour
     public void ReadStringInput(string s)
     {
         input = s;
-        print(input);
+        // print(input);
         if (MemoryData.name.ToLower().Equals(input.ToLower()) == false) return;
         
         inputField.SetActive(false);

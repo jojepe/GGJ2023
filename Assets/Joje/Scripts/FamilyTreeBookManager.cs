@@ -1,18 +1,38 @@
 using System;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FamilyTreeBookManager : Persistor
+public class FamilyTreeBookManager : MonoBehaviour
 {
     [SerializeField] private NameInput[] nameInputs;
+
+    [Header("GameEvents")]
+    [SerializeField] private GameEvent onFamilyTreeEnabled;
+    [SerializeField] private GameEvent onFamilyTreeDisabled;
     
     private bool HasAllNamesBeenFound 
         => Array.TrueForAll(nameInputs, n => n.MemoryData.hasNameBeenFound);
 
-    protected override void Start()
+    // protected override void Start()
+    // {
+    //     base.Start();
+    //     Array.ForEach(nameInputs, ResetStatus);
+    // }
+
+    private void OnEnable()
     {
-        base.Start();
+        onFamilyTreeEnabled.Raise();
+    }
+
+    protected void Start()
+    {
         Array.ForEach(nameInputs, ResetStatus);
+    }
+    
+    private void OnDisable()
+    {
+        onFamilyTreeDisabled.Raise();
     }
 
     private void ResetStatus(NameInput nameInput)
