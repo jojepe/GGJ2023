@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768b66ab6de6d2540a66e38c3c1c49ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionIndex: 0
+  usableItem: {fileID: 0}
   image: {fileID: 1715878574970501155}
   buttons: {fileID: 1715878576919043384}
   maxX: 1820
@@ -197,7 +197,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1715878574980955591}
         m_TargetAssemblyTypeName: Page, Assembly-CSharp
-        m_MethodName: TryShow
+        m_MethodName: TryShowUsableItem
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

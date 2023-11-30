@@ -386,8 +386,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1719081170283083484, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Name
+      value: FamilyTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 1719081170283083484, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4613324571395985454, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_IsActive
@@ -425,6 +429,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6276577035068300171, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: familyTreeBook
+      value: 
+      objectReference: {fileID: 550673816}
     - target: {fileID: 7183808028559210524, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -433,8 +441,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: MapBook
       objectReference: {fileID: 0}
+    - target: {fileID: 8052803486437644721, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+--- !u!114 &550673816 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4396256829726636358, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+  m_PrefabInstance: {fileID: 550673815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63791de3fda7744aba9cf80e10a8630, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &589491793
 PrefabInstance:
   m_ObjectHideFlags: 0

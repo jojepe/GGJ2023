@@ -16,13 +16,13 @@ public class InteractableOutline : MonoBehaviour
     public void OnMouseEnter()
     {
         ShowVisualization();
-        print("Hover");
+        // print("Hover");
     }
 
     public void OnMouseExit()
     {
         HideVisualization();
-        print("HoverOut");
+        // print("HoverOut");
     }
 
     private void ShowVisualization()

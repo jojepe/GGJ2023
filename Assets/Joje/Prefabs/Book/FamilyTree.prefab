@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1719081170611424391}
   - component: {fileID: 4396256830338089746}
   m_Layer: 5
-  m_Name: Book
+  m_Name: FamilyTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,6 +33,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 282227228615738413}
+  - {fileID: 3825356158716682183}
   - {fileID: 6276577035662696926}
   - {fileID: 3120573256408459118}
   - {fileID: 2147006674685618530}
@@ -40,7 +41,6 @@ RectTransform:
   - {fileID: 2359104117213691185}
   - {fileID: 4174391481900529220}
   - {fileID: 8052803484747761837}
-  - {fileID: 3825356158716682183}
   - {fileID: 4658446918103924525}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c63791de3fda7744aba9cf80e10a8630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameNumbers: 7
+  nameInputs: []
 --- !u!1 &5801457877450067310
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +365,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719081170611424388}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -509,9 +509,13 @@ PrefabInstance:
       propertyPath: name
       value: Jaqueline
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 02e6200cfdf73904db919d789d2a843c, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -659,9 +663,13 @@ PrefabInstance:
       propertyPath: name
       value: Luiz
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: ed7908c5c2119e245bd63b91a8637d58, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -813,9 +821,13 @@ PrefabInstance:
       propertyPath: name
       value: Marcelo
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 1af975a3253ce0442b1d1a815ba2c340, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -979,9 +991,13 @@ PrefabInstance:
       propertyPath: name
       value: Rosemaria
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 9865a7f33c479e34dadeb105f0123aba, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -1133,9 +1149,13 @@ PrefabInstance:
       propertyPath: name
       value: Marina
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c8e3431067c012438081c61948eb022, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -1283,9 +1303,13 @@ PrefabInstance:
       propertyPath: name
       value: Manoel
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 1d844e3ba3d72d045a76ad8530df6d4d, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -1437,9 +1461,13 @@ PrefabInstance:
       propertyPath: name
       value: Roberto
       objectReference: {fileID: 0}
+    - target: {fileID: 9134382801288484986, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
+      propertyPath: <MemoryData>k__BackingField
+      value: 
+      objectReference: {fileID: 11400000, guid: 02da0723e1506b34a9a6c999e5ced889, type: 2}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9134382801288484987, guid: e293d4b577ab45a48b9cbd9e6bbc75ae, type: 3}
       propertyPath: m_LocalScale.x

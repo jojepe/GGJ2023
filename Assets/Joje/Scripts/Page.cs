@@ -30,7 +30,7 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
                 return;
             }
             draggingObject.position = globalMousePosition;
-            print(draggingObject.position);
+            // print(draggingObject.position);
         }
     }
 
@@ -64,11 +64,13 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
         image.transform.eulerAngles += new Vector3(0,0,22.5f);
     }
 
-    public void TryShow(Object _object)
+    public void TryShowUsableItem(Object _object)
     {
         var message = (UsableItemRepresentation)_object;
         if (message.UsableItem.InteractionIndex == usableItem.InteractionIndex)
         {
+            Debug.Log("TryShowUsableItem on: " + gameObject.name);
+
             image.SetActive(true);
             message.UsableItem.hasBeenSet = true;
         }

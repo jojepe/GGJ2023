@@ -5,7 +5,7 @@ public class Persistor : MonoBehaviour
 {
     private static bool exists = false;
 
-    private void Start()
+    protected virtual void Start()
     {
         if (exists)
         {

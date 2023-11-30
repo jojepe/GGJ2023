@@ -17,13 +17,13 @@ public class Interactable : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
     public void OnPointerEnter(PointerEventData eventData)
     {
         ShowVisualization();
-        print("Hover");
+        // print("Hover");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         HideVisualization();
-        print("HoverOut");
+        // print("HoverOut");
     }
 
     private void ShowVisualization()
