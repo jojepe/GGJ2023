@@ -38,7 +38,7 @@ public class FamilyTreeBookManager : MonoBehaviour
     private void ResetStatus(NameInput nameInput)
     {
         nameInput.familyTreeBook = this;
-        nameInput.MemoryData.hasNameBeenFound = false;
+        // nameInput.MemoryData.hasNameBeenFound = false;
     }
     
     public void RightAnswer()

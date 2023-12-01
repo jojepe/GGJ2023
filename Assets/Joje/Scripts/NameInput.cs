@@ -17,13 +17,14 @@ public class NameInput : MonoBehaviour
 
     public void Start()
     {
+
         if (MemoryData.hasNameBeenFound)
         {
-            ReadStringInput(MemoryData.name);
+           ReadStringInput(MemoryData.name);
             return;
         }
 
-        MemoryData.hasNameBeenFound = false;
+        // MemoryData.hasNameBeenFound = false;
     }
 
     public void ReadStringInput(string s)
@@ -34,6 +35,7 @@ public class NameInput : MonoBehaviour
         
         inputField.SetActive(false);
         picture.gameObject.SetActive(true);
+        // Debug.Log(MemoryData.name);
         MemoryData.hasNameBeenFound = true;
         // familyTreeBook.RightAnswer();
     }
