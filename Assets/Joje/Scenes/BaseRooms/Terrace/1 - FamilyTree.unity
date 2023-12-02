@@ -331,7 +331,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 740078464511589875, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 740078464511589875, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -397,6 +397,90 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2147006673956705078, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147006674494058420, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147006674513781514, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "Jaqueline\u200B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147006674513781514, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147006674513781514, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359104117004434407, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359104117057582937, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "Jaqueline\u200B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359104117057582937, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359104117057582937, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359104117541734245, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120573256210410758, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "Jaqueline\u200B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120573256210410758, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120573256210410758, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120573256333287864, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120573256870731066, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174391481829096492, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "Jaqueline\u200B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174391481829096492, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174391481829096492, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174391481829096492, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174391481840431250, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174391482377735184, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4613324571395985454, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -425,6 +509,14 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4658446918430131577, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677822014056471814, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4797651717570620819, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 2416
@@ -441,6 +533,10 @@ PrefabInstance:
       propertyPath: familyTreeBook
       value: 
       objectReference: {fileID: 550673816}
+    - target: {fileID: 6276577035590740918, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "\u200B"
+      objectReference: {fileID: 0}
     - target: {fileID: 6591026049133082577, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: _previouslyRegisteredEvent
       value: 
@@ -448,6 +544,10 @@ PrefabInstance:
     - target: {fileID: 7183808028559210524, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436027723488778126, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7437920018663999597, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_Name
@@ -457,9 +557,49 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8052803484869001925, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "Jaqueline\u200B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052803484869001925, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052803484869001925, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052803484957806203, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Text
+      value: Manoel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8052803485495292665, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8052803486437644721, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458855310714514719, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458855311251984797, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458855311339216163, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_text
+      value: "Jaqueline\u200B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458855311339216163, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458855311339216163, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 938e3037dff0af64e9a5eec4af234ba8, type: 3}
@@ -491,7 +631,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d1a487a6ea01b3743adb77f87f686964, type: 2}
     - target: {fileID: 7360042085064572613, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7360042085064572613, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: m_LocalPosition.x
