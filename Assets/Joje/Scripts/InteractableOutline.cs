@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Collider))]
 public class InteractableOutline : MonoBehaviour
 {
-    private SpriteRenderer sprite;
+    private Renderer sprite;
 
     private void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+        sprite = GetComponent<Renderer>();
         HideVisualization();
     }
 

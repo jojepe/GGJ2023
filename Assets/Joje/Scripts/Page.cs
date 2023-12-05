@@ -1,8 +1,10 @@
 using Marlus.InventorySystem.Scripts;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandler, IPointerDownHandler
+public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, IPointerDownHandler
 {
     public UsableItem usableItem;
     public GameObject image;
@@ -12,70 +14,75 @@ public class Page : MonoBehaviour, IDragHandler, ISelectHandler, IDeselectHandle
     public int minX;
     public int maxY;
     public int minY;
+    
     private RectTransform draggingObject;
+    private Vector3 targetPosition;
+    
+    private const float rotationRate = 22.5f;
 
-    private void Awake()
+    protected override void Awake()
     {
         draggingObject = transform as RectTransform;
+        // interactable = false;
         image.SetActive(usableItem.hasBeenSet ? true : false);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (RectTransformUtility.ScreenPointToWorldPointInRectangle(draggingObject, eventData.position,
-                eventData.pressEventCamera, out var globalMousePosition))
+        if (image.activeSelf == false)
         {
-            if (globalMousePosition.x > maxX || globalMousePosition.x < minX || globalMousePosition.y > maxY || globalMousePosition.y < minY)
-            {
-                return;
-            }
-            draggingObject.position = globalMousePosition;
-            // print(draggingObject.position);
+            return;
         }
+        if (RectTransformUtility.ScreenPointToWorldPointInRectangle(draggingObject, eventData.position,
+                eventData.pressEventCamera, out var globalMousePosition) == false)
+        {
+            return;
+        }
+        if (globalMousePosition.x > maxX || globalMousePosition.x < minX || globalMousePosition.y > maxY || globalMousePosition.y < minY)
+        {
+            return;
+        }
+        var targetPosition = globalMousePosition;
+        // targetPosition.z = 1f;
+        draggingObject.position = targetPosition;
+        // print(draggingObject.position);
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public override void OnPointerDown(PointerEventData eventData)
     {
+        Debug.Log("Pointer down on: " + gameObject.name);
         if (eventData.button != PointerEventData.InputButton.Left)
             return;
+        if (image.activeSelf == false || interactable == false)
+        {
+            // Debug.Log(name + " has been set as last sibling");
+            return;
+        }
+        Debug.Log(gameObject.name + " should be selected");
         EventSystem.current.SetSelectedGameObject(gameObject, eventData);
     }
 
-    public void OnSelect(BaseEventData eventData)
+    public override void OnSelect(BaseEventData eventData)
     {
         if (image.activeSelf == true)
         {
+            // Debug.Log("Rotation button toggled on");
             buttons.SetActive(true);
         }
     }
     
-    public void OnDeselect(BaseEventData eventData)
+    public override void OnDeselect(BaseEventData eventData)
     {
         buttons.SetActive(false);
     }
     
-    public void rotateRight()
+    public void rotateCounterClockwise()
     {
-        image.transform.eulerAngles += new Vector3(0,0,-22.5f);
+        image.transform.eulerAngles += new Vector3(0,0,-rotationRate);
     }
 
-    public void rotateLeft()
+    public void rotateClockwise()
     {
-        image.transform.eulerAngles += new Vector3(0,0,22.5f);
+        image.transform.eulerAngles += new Vector3(0,0,rotationRate);
     }
-
-    public void TryShowUsableItem(Object _object)
-    {
-        var message = (UsableItemRepresentation)_object;
-        if (message.UsableItem.InteractionIndex == usableItem.InteractionIndex)
-        {
-            Debug.Log("TryShowUsableItem on: " + gameObject.name);
-
-            image.SetActive(true);
-            message.UsableItem.hasBeenSet = true;
-        }
-        message.UsableItem._inventory.usableItems.Clear();
-        Destroy(message.gameObject);
-    }
-    
 }
