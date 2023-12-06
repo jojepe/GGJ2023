@@ -68,6 +68,7 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
         {
             // Debug.Log("Rotation button toggled on");
             buttons.SetActive(true);
+            // buttons.transform.rotation = image.transform.rotation;
         }
     }
     
@@ -78,11 +79,11 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
     
     public void rotateCounterClockwise()
     {
-        image.transform.eulerAngles += new Vector3(0,0,-rotationRate);
+        image.transform.eulerAngles += new Vector3(0,0,rotationRate);
     }
 
     public void rotateClockwise()
     {
-        image.transform.eulerAngles += new Vector3(0,0,rotationRate);
+        image.transform.eulerAngles += new Vector3(0,0,-rotationRate);
     }
 }

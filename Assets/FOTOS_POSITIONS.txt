@@ -1,0 +1,32 @@
+0 - MainRoom
+	Tia Jaqueline 1/2
+	Vovo Rosemary 2/2
+
+1 - FamilyTree
+	Irmão Luiz 1/2
+
+2 - Bathroom
+	Mae Marina 1/2
+	Irmão Luiz 2/2
+
+3 - Corridor
+	Vo Manoel 1/2
+	Tio Marcelo 1/2
+
+4 - Corridor Bedroom
+	Mãe Marina 2/2
+	Pai Roberto 1/2
+
+
+5 - Bedroom
+	Tia Jaqueline 2/2
+	Tio Marcelo 1/2
+
+6 - Bathroom
+	Pai Roberto 2/2
+
+7 - ThoughtRoom
+	Tio Marcelo 2/2
+	Vo Manoel 2/2
+	Vovo Rosemary 1/2!
+	

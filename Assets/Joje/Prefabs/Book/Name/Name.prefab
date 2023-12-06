@@ -49,6 +49,7 @@ MonoBehaviour:
   <MemoryData>k__BackingField: {fileID: 0}
   picture: {fileID: 9134382802490438453}
   inputField: {fileID: 9134382801824883911}
+  onNameFound: {fileID: 11400000, guid: 73d278e773e49f34592e07efd080463b, type: 2}
   familyTreeBook: {fileID: 0}
 --- !u!1 &9134382801824883911
 GameObject:
@@ -304,7 +305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jaqueline\u200B"
+  m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

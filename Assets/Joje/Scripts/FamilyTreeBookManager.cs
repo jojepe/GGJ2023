@@ -1,18 +1,19 @@
 using System;
+using System.Collections.Generic;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FamilyTreeBookManager : MonoBehaviour
 {
-    [SerializeField] private NameInput[] nameInputs;
+    [SerializeField] private List<NameInput> nameInputs;
 
     [Header("GameEvents")]
     [SerializeField] private GameEvent onFamilyTreeEnabled;
     [SerializeField] private GameEvent onFamilyTreeDisabled;
     
     private bool HasAllNamesBeenFound 
-        => Array.TrueForAll(nameInputs, n => n.MemoryData.hasNameBeenFound);
+        => nameInputs.TrueForAll(n => n.MemoryData.hasNameBeenFound);
 
     // protected override void Start()
     // {
@@ -27,7 +28,7 @@ public class FamilyTreeBookManager : MonoBehaviour
 
     protected void Start()
     {
-        Array.ForEach(nameInputs, ResetStatus);
+        Initialize();
     }
     
     private void OnDisable()
@@ -35,12 +36,19 @@ public class FamilyTreeBookManager : MonoBehaviour
         onFamilyTreeDisabled.Raise();
     }
 
-    private void ResetStatus(NameInput nameInput)
+    private void Initialize()
     {
-        nameInput.familyTreeBook = this;
-        // nameInput.MemoryData.hasNameBeenFound = false;
+        nameInputs = new List<NameInput>(transform.childCount);
+
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).TryGetComponent(out NameInput nameInput) == false) continue;
+                
+            nameInputs.Add(nameInput);
+            // nameInput.gameObject.SetActive(refPage.usableItem.hasBeenSet);
+        }
     }
-    
+
     public void RightAnswer()
     {
         if (!HasAllNamesBeenFound) return;

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Marlus.InventorySystem.Scripts;
 using UnityEngine;
@@ -10,6 +11,11 @@ namespace Joje.Scripts
     {
         private List<Page> pages;
         private Page refPage;
+
+        private void Awake()
+        {
+            gameObject.SetActive(false);
+        }
 
         private void Start()
         {

@@ -1,1 +1,1 @@
-PagePanel deve ser um gerenciador que liga e desliga os pages
+Está uma das partes da foto da Vó para ser achada

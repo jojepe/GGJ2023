@@ -415,7 +415,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7360042085064572609, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: m_Name
-      value: Collectable
+      value: Collectable - MaeMarina
       objectReference: {fileID: 0}
     - target: {fileID: 7360042085064572612, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: usableItem
@@ -492,7 +492,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7360042085064572609, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: m_Name
-      value: Collectable_1
+      value: Collectable_1 - PaiRoberto
       objectReference: {fileID: 0}
     - target: {fileID: 7360042085064572612, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: usableItem

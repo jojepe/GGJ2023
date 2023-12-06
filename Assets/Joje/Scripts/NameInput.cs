@@ -1,3 +1,4 @@
+using ScriptableObjectArchitecture;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -7,9 +8,11 @@ public class NameInput : MonoBehaviour
 {
     [field: SerializeField] public FamilyMemberMemoryData MemoryData {get; private set;}
     [SerializeField] private Image picture;
-    [FormerlySerializedAs("field")]
     [Header("Input Field")] 
-    [SerializeField] private GameObject inputField;
+    [FormerlySerializedAs("field")] [SerializeField] private GameObject inputField;
+
+    [Header("Game Events")] 
+    [SerializeField] private StringGameEvent onNameFound;
     
     [HideInInspector] public FamilyTreeBookManager familyTreeBook;
     
@@ -35,8 +38,7 @@ public class NameInput : MonoBehaviour
         
         inputField.SetActive(false);
         picture.gameObject.SetActive(true);
-        // Debug.Log(MemoryData.name);
         MemoryData.hasNameBeenFound = true;
-        // familyTreeBook.RightAnswer();
+        onNameFound.Raise(input);
     }
 }
