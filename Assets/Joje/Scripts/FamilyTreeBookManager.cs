@@ -53,7 +53,7 @@ public class FamilyTreeBookManager : MonoBehaviour
     {
         if (!HasAllNamesBeenFound) return;
         
-        print("Win Game");
+        // print("Win Game");
         SceneManager.LoadScene("WinGame");
     }
     

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameEnd : MonoBehaviour
@@ -8,13 +7,15 @@ public class GameEnd : MonoBehaviour
     
     void Start()
     {
-        StartCoroutine(endGame());
+        StartCoroutine(EndGame());
     }
 
-    IEnumerator endGame()
+    IEnumerator EndGame()
     {
         yield return new WaitForSeconds(endTimer);
-        print("EndGame");
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
         Application.Quit();
     }
 

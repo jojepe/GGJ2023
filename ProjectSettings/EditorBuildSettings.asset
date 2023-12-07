@@ -11,33 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Joje/Scenes/BaseRooms/Cozinha.unity
-    guid: e07d9c623f9d59c4b98670b0ec6b4cf4
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/Upper/3 - Corridor.unity
     guid: 1805603ed3576b94c82efa5224ba6e6e
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/Terrace/2 - Bathroom.unity
     guid: 4158daa5d08a37742aecf411b69448a5
-  - enabled: 0
-    path: Assets/Marlus/InventorySystem/Scenes/Left.unity
-    guid: 558e8d30992af49468e9cd09a82fa228
-  - enabled: 0
-    path: Assets/Marlus/InventorySystem/Scenes/Up.unity
-    guid: 2fb6b4f48640ee94bb122223dd3fda3b
-  - enabled: 0
-    path: Assets/Marlus/InventorySystem/Scenes/Right.unity
-    guid: ee361d314b2ef5840b4de3c55d6beca1
-  - enabled: 0
-    path: Assets/Marlus/InventorySystem/Scenes/Down.unity
-    guid: ed9e8cc7e37d9734389667b8bd81f0ec
-  - enabled: 0
-    path: Assets/Marlus/InventorySystem/Scenes/InventoryTesting.unity
-    guid: 5734a1b20fe270a42be2a6feb762f9c1
-  - enabled: 0
-    path: Assets/Joje/Scenes/Wall.unity
-    guid: 675a4c4262ceef94f853a729fdf09640
   - enabled: 1
     path: Assets/Joje/Scenes/BaseItemCollection.unity
     guid: 1ae5f225967b48243b70810d89c89c11
@@ -56,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/Upper/7 - ThoughtRoom.unity
     guid: 5a17e23d9e0f460438de159837b9aca1
+  - enabled: 1
+    path: Assets/Joje/EndScenes/WinGame.unity
+    guid: 55b156e67a695ab4798dd88afc68f8c5
+  - enabled: 1
+    path: Assets/Joje/EndScenes/EndGame.unity
+    guid: 7db1c736ec43aaa46ac9173e6fa01919
   m_configObjects: {}

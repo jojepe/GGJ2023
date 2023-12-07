@@ -1,27 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TimerHolder : MonoBehaviour
 {
-    [Header("Time to End")] 
-    public float time;
-    
-    [Header("Timer")]
-    [SerializeField]
+    [SerializeField] private float targetTime;
+    [SerializeField] private FloatGameEvent onTimeUpdated;
+    [SerializeField] private GameObject parentUI;
     private float timer = 0;
-    void Start()
+
+    private void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(parentUI);
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
+        onTimeUpdated.Raise(1-timer/targetTime);
 
-        if (timer > time)
+        if (timer > targetTime)
         {
             print("No more time");
             SceneManager.LoadScene("EndGame");
