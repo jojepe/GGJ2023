@@ -1,3 +1,4 @@
+using Marlus.InventorySystem.ScriptableObjects;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 

@@ -397,6 +397,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimerUI
       objectReference: {fileID: 0}
+    - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -211
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
 --- !u!1 &431314085
@@ -483,23 +507,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &461268360 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7360042085064572609, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
-  m_PrefabInstance: {fileID: 1596476782}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &461268366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461268360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6ce891902c1476792aac376149fff0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &554086477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -701,6 +708,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3408965682113472530, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 17bca279c26a16d40aadeca89f21f5c5, type: 2}
+    - target: {fileID: 6809092804108309198, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: c47bc191d512ee34793261a35c26aa67, type: 2}
     - target: {fileID: 7360042085064572609, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: m_Name
       value: Collectable - Rosemary
@@ -1007,6 +1022,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &816552058 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8857486187851039790, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
+  m_PrefabInstance: {fileID: 1068897443}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &828164550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,6 +1276,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8085035129118585245, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
+      propertyPath: usableItemSlots.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8085035129118585245, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
+      propertyPath: usableItemSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 816552058}
     - target: {fileID: 8857486187851039790, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1380,6 +1408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ce891902c1476792aac376149fff0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activationConditions: []
+  IsEnabled: 1
 --- !u!61 &1155395748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2365,6 +2395,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3408965682113472530, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 17bca279c26a16d40aadeca89f21f5c5, type: 2}
+    - target: {fileID: 6809092804108309198, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: c47bc191d512ee34793261a35c26aa67, type: 2}
     - target: {fileID: 7360042085064572609, guid: 656d3f0b38b85c4419a36a52cd113a83, type: 3}
       propertyPath: m_Name
       value: Collectable-TiaJaqueline

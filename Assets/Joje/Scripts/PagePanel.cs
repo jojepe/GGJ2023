@@ -14,7 +14,7 @@ namespace Joje.Scripts
 
         private void Awake()
         {
-            gameObject.SetActive(false);
+            // gameObject.SetActive(false);
         }
 
         private void Start()
@@ -49,7 +49,8 @@ namespace Joje.Scripts
                 // refPage.interactable = true;
                 usableItemRep.UsableItem.hasBeenSet = true;
             }
-            usableItemRep.UsableItem._inventory.usableItems.Clear();
+            // usableItemRep.UsableItem._inventory.usableItems.Clear();
+            usableItemRep.UsableItem._inventory.Remove(usableItemRep.UsableItem);
             Destroy(usableItemRep.gameObject);
         }
     }

@@ -43,30 +43,6 @@ namespace Marlus.InventorySystem.Scripts
             }
         }
 
-        // public void PopulateManager()
-        // {
-        //     for (int i = 0; i < usableItemSlots.Length; i++)
-        //     {
-        //         var usableItem = usableItems[i];
-        //         var usableItemSlot = usableItemSlots[i];
-        //         if (inventory.usableItems.Count == 0)
-        //         {
-        //             return;
-        //         }
-        //         if (usableItemSlot.childCount == 0 && inventory.usableItems[i] != null)
-        //         {
-        //             usableItem = Instantiate(usableItemPrefab, usableItemSlot, false);
-        //             if (usableItem.TryGetComponent(out UsableItemRepresentation item))
-        //             {
-        //                 item.SetItemProperties(inventory.usableItems[i]);
-        //             }
-        //             break;
-        //         }
-        //
-        //         print("There's children in: " + gameObject.name);
-        //     }
-        // }
-
         public void PopulateManager()
         {
             for (int i = 0; i < inventory.usableItems.Count; i++)

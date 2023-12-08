@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aaea3f6daed4f5892033b3bd23eab9d, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: 
-  usableItems:
-  - {fileID: 11400000, guid: 5c2b60192e323404d9d0179b4eb0f46f, type: 2}
+  usableItems: []
+  maximumItems: 1
+  hasReachedLimit:
+    _useConstant: 0
+    _constantValue: 1
+    _variable: {fileID: 11400000, guid: 82a1820e868c61845b9e876aa826e6bb, type: 2}
+  hasSpace:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: a245b46bab3d071499083aabf1db9e16, type: 2}
+  onLimitReached: {fileID: 11400000, guid: 17bca279c26a16d40aadeca89f21f5c5, type: 2}
+  onLimitCleared: {fileID: 11400000, guid: c47bc191d512ee34793261a35c26aa67, type: 2}
