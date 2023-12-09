@@ -1362,6 +1362,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1262077299830216255, guid: 4b56b102705c5074985bc2440e04c55d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1262077301359542133, guid: 4b56b102705c5074985bc2440e04c55d, type: 3}
       propertyPath: m_Name
       value: CounterClockwiseIcon
@@ -1369,6 +1373,10 @@ PrefabInstance:
     - target: {fileID: 1262077301639705380, guid: 4b56b102705c5074985bc2440e04c55d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1459886181584429060, guid: 4b56b102705c5074985bc2440e04c55d, type: 3}
+      propertyPath: m_Colors.m_NormalColor.a
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 2025444187906175598, guid: 4b56b102705c5074985bc2440e04c55d, type: 3}
       propertyPath: m_IsActive

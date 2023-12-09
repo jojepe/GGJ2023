@@ -6,12 +6,15 @@ using UnityEngine.Serialization;
 
 namespace Joje.Scripts
 {
-    public class SceneLoader : MonoBehaviour
+    public class SceneLoader : Singleton<SceneLoader>
     {
         [SerializeField] private SceneReference mainScene;
+        
+        [SerializeField] private float defaultLoadTime;
 
-        private void Awake()
+        protected override void Awake()
         { 
+            base.Awake();
             LoadMainScene();
         }
 

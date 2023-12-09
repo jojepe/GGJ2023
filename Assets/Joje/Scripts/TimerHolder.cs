@@ -28,4 +28,10 @@ public class TimerHolder : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+
+    public void SetTargetTime(AudioClip audioClip)
+    {
+        Debug.Log(audioClip.length);
+        targetTime = audioClip.length;
+    }
 }
