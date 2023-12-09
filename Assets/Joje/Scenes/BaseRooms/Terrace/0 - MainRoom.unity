@@ -445,6 +445,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6345890734861376602, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: roomToEnter.sceneAsset
       value: 
