@@ -1,1 +1,1 @@
-Correlacionar inventário e outline de interação dos objetos.
+Arrumar colisor das portas de frente para o jogador e colocar RoomTransitors onde ainda tem setas

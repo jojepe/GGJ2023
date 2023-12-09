@@ -481,6 +481,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 4651c38d0708d1c4bbdd8c8df046b6b3, type: 3}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 4651c38d0708d1c4bbdd8c8df046b6b3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Size.x
+      value: 337164.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Offset.x
+      value: 68923.99
+      objectReference: {fileID: 0}
     - target: {fileID: 8635512373478575814, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_Name
       value: Porta
@@ -536,6 +552,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3389975416885212438, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: eb98f06db0b9fab49a9861a7023bd414, type: 3}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: eb98f06db0b9fab49a9861a7023bd414
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Offset.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8635512373478575814, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
@@ -958,9 +994,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrows
       objectReference: {fileID: 0}
+    - target: {fileID: 7299154043984874374, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154043984874377, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299154043992432085, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7299154043992432090, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder

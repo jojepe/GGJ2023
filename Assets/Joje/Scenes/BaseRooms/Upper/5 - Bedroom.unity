@@ -581,6 +581,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 4aa76b5188b3fc14b95b76ffef6876e6, type: 3}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 4aa76b5188b3fc14b95b76ffef6876e6
+      objectReference: {fileID: 0}
     - target: {fileID: 8635512373478575814, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_Name
       value: Porta
@@ -766,6 +774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arrows
       objectReference: {fileID: 0}
+    - target: {fileID: 7299154043984874374, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154043984874377, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -785,6 +797,10 @@ PrefabInstance:
     - target: {fileID: 7299154044361707765, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299154045108035666, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7299154045108035677, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
@@ -1604,6 +1620,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3389975416885212438, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 5a17e23d9e0f460438de159837b9aca1, type: 3}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 5a17e23d9e0f460438de159837b9aca1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8633658777903660193, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: m_Offset.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8635512373478575814, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}

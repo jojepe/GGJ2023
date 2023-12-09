@@ -15,12 +15,6 @@ public class FamilyTreeBookManager : MonoBehaviour
     private bool HasAllNamesBeenFound 
         => nameInputs.TrueForAll(n => n.MemoryData.hasNameBeenFound);
 
-    // protected override void Start()
-    // {
-    //     base.Start();
-    //     Array.ForEach(nameInputs, ResetStatus);
-    // }
-
     private void OnEnable()
     {
         onFamilyTreeEnabled.Raise();

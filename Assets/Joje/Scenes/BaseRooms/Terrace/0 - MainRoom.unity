@@ -514,6 +514,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1959742179412088415, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b3f5d1d6f3a21c4d98a811c6a899831, type: 2}
+    - target: {fileID: 2470851739804983929, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 7212b2674b11b0f478a4caa01f8b13a1, type: 2}
     - target: {fileID: 3389975416885212438, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -557,6 +565,14 @@ PrefabInstance:
     - target: {fileID: 3389975416885212438, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 4158daa5d08a37742aecf411b69448a5, type: 3}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 4158daa5d08a37742aecf411b69448a5
       objectReference: {fileID: 0}
     - target: {fileID: 8635512373478575814, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_Name
@@ -2862,6 +2878,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -702
       objectReference: {fileID: 0}
+    - target: {fileID: 7299154043992432085, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7299154043992432090, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2879,6 +2899,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7299154044361707770, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7299154045108035666, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2929,7 +2953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7257660435007654429, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.91
+      value: 0.86
       objectReference: {fileID: 0}
     - target: {fileID: 7257660435007654429, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2963,6 +2987,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7317765147423475339, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317765147423475339, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317765147423475339, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7317765147423475339, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8066988282266357927, guid: 8f33e15d8a1fdc64980d036b807e65e2, type: 3}
       propertyPath: m_Name
       value: camera
@@ -2976,6 +3016,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1959742179412088415, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b3f5d1d6f3a21c4d98a811c6a899831, type: 2}
+    - target: {fileID: 2470851739804983929, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: _previouslyRegisteredEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 7212b2674b11b0f478a4caa01f8b13a1, type: 2}
     - target: {fileID: 3389975416885212438, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_RootOrder
       value: 12

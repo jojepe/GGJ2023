@@ -735,6 +735,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAsset
+      value: 
+      objectReference: {fileID: 102900000, guid: 1805603ed3576b94c82efa5224ba6e6e, type: 3}
+    - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
+      propertyPath: roomToEnter.sceneAssetGuidHex
+      value: 1805603ed3576b94c82efa5224ba6e6e
+      objectReference: {fileID: 0}
     - target: {fileID: 8635512373478575814, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: m_Name
       value: Porta
@@ -953,6 +961,10 @@ PrefabInstance:
     - target: {fileID: 1754260450983838948, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_Name
       value: Arrows
+      objectReference: {fileID: 0}
+    - target: {fileID: 1754260450983838948, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7299154043984874374, guid: dd740981fdb0d274fabdc9f8aeb59c98, type: 3}
       propertyPath: m_IsActive
