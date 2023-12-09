@@ -453,5 +453,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTime: 60
+  offsetTime: -5
+  endGameScene:
+    sceneAsset: {fileID: 102900000, guid: 7db1c736ec43aaa46ac9173e6fa01919, type: 3}
+    sceneAssetGuidHex: 7db1c736ec43aaa46ac9173e6fa01919
   onTimeUpdated: {fileID: 11400000, guid: 2f7b118e826b8614cad59c016c82a2b7, type: 2}
   parentUI: {fileID: 5143868328005855835}

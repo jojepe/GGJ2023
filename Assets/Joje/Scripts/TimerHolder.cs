@@ -1,11 +1,15 @@
 using System;
+using Joje.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SceneReference = Eflatun.SceneReference.SceneReference;
 
 public class TimerHolder : MonoBehaviour
 {
     [SerializeField] private float targetTime;
+    [SerializeField] private float offsetTime = 5f;
+    [SerializeField] private SceneReference endGameScene;
     [SerializeField] private FloatGameEvent onTimeUpdated;
     [SerializeField] private GameObject parentUI;
     
@@ -21,11 +25,12 @@ public class TimerHolder : MonoBehaviour
         timer += Time.deltaTime;
         onTimeUpdated.Raise(1-timer/targetTime);
 
-        if (timer > targetTime)
+        if (timer > targetTime - offsetTime && SceneLoader.Instance.IsLoading == false)
         {
             print("No more time");
-            SceneManager.LoadScene("EndGame");
-            gameObject.SetActive(false);
+            // SceneManager.LoadScene("EndGame");
+            SceneLoader.Instance.LoadScene(endGameScene.BuildIndex, offsetTime, 
+                () => gameObject.SetActive(false));
         }
     }
 

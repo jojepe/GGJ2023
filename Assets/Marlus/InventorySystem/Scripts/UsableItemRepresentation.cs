@@ -51,6 +51,7 @@ namespace Marlus.InventorySystem.Scripts
         public void TryUseItem()
         {
             OnTryUseItem.Raise(this);
+            ResetPositionToInventory();
         }
 
         public void ResetPositionToInventory()

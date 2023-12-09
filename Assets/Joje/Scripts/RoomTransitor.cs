@@ -11,7 +11,8 @@ namespace Joje.Scripts
         {
             if (!isLocked)
             {
-                SceneManager.LoadScene(roomToEnter.BuildIndex);
+                // SceneManager.LoadScene(roomToEnter.BuildIndex);
+                SceneLoader.Instance.LoadScene(roomToEnter.BuildIndex);
                 print("Entered " + roomToEnter);
             }
             else
