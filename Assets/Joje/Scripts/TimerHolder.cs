@@ -8,9 +8,10 @@ public class TimerHolder : MonoBehaviour
     [SerializeField] private float targetTime;
     [SerializeField] private FloatGameEvent onTimeUpdated;
     [SerializeField] private GameObject parentUI;
+    
     private float timer = 0;
 
-    private void Start()
+    private void Awake()
     {
         DontDestroyOnLoad(parentUI);
     }
