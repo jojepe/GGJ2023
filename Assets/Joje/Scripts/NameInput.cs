@@ -23,11 +23,8 @@ public class NameInput : MonoBehaviour
 
         if (MemoryData.hasNameBeenFound)
         {
-           ReadStringInput(MemoryData.name);
-            return;
+           ShowMemory();
         }
-
-        // MemoryData.hasNameBeenFound = false;
     }
 
     public void ReadStringInput(string s)
@@ -36,9 +33,16 @@ public class NameInput : MonoBehaviour
         // print(input);
         if (MemoryData.name.ToLower().Equals(input.ToLower()) == false) return;
         
-        inputField.SetActive(false);
-        picture.gameObject.SetActive(true);
+        // inputField.SetActive(false);
+        // picture.gameObject.SetActive(true);
         MemoryData.hasNameBeenFound = true;
         onNameFound.Raise(input);
+        ShowMemory();
+    }
+
+    public void ShowMemory()
+    {
+        inputField.SetActive(false);
+        picture.gameObject.SetActive(true);
     }
 }

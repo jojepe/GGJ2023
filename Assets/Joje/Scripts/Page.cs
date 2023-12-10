@@ -1,4 +1,5 @@
 using Marlus.InventorySystem.Scripts;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.EventSystems;
@@ -14,6 +15,9 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
     public int minX;
     public int maxY;
     public int minY;
+    [Header("GameEvents")]
+    [SerializeField] private GameEvent onPageSelected;
+    [SerializeField] private GameEvent onPageRotated;
     
     private RectTransform draggingObject;
     private Vector3 targetPosition;
@@ -23,8 +27,7 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
     protected override void Awake()
     {
         draggingObject = transform as RectTransform;
-        // interactable = false;
-        image.SetActive(usableItem.hasBeenSet ? true : false);
+        image.SetActive(usableItem.hasBeenSet);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -43,22 +46,20 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
             return;
         }
         var targetPosition = globalMousePosition;
-        // targetPosition.z = 1f;
         draggingObject.position = targetPosition;
         // print(draggingObject.position);
     }
 
     public override void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("Pointer down on: " + gameObject.name);
+        // Debug.Log("Pointer down on: " + gameObject.name);
         if (eventData.button != PointerEventData.InputButton.Left)
             return;
         if (image.activeSelf == false || interactable == false)
         {
-            // Debug.Log(name + " has been set as last sibling");
             return;
         }
-        Debug.Log(gameObject.name + " should be selected");
+        // Debug.Log(gameObject.name + " should be selected");
         EventSystem.current.SetSelectedGameObject(gameObject, eventData);
     }
 
@@ -68,7 +69,7 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
         {
             // Debug.Log("Rotation button toggled on");
             buttons.SetActive(true);
-            // buttons.transform.rotation = image.transform.rotation;
+            onPageSelected.Raise();
         }
     }
     
@@ -80,10 +81,12 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
     public void rotateCounterClockwise()
     {
         image.transform.eulerAngles += new Vector3(0,0,rotationRate);
+        onPageRotated.Raise();
     }
 
     public void rotateClockwise()
     {
         image.transform.eulerAngles += new Vector3(0,0,-rotationRate);
+        onPageRotated.Raise();
     }
 }

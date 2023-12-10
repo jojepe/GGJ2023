@@ -375,6 +375,8 @@ MonoBehaviour:
   minX: 100
   maxY: 980
   minY: 100
+  onPageSelected: {fileID: 11400000, guid: dc09e868780267145a994fa699dfe695, type: 2}
+  onPageRotated: {fileID: 11400000, guid: 1c21aa1797f4c664abdf0dda8f59a365, type: 2}
 --- !u!222 &1715878574980955586
 CanvasRenderer:
   m_ObjectHideFlags: 0

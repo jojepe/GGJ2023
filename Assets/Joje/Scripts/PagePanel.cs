@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using Marlus.InventorySystem.Scripts;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -9,6 +11,8 @@ namespace Joje.Scripts
 {
     public class PagePanel : InteractablePanel
     {
+        [SerializeField] [CanBeNull] private GameEvent OnUsableItemUsed;
+        
         private List<Page> pages;
         private Page refPage;
 
@@ -50,6 +54,7 @@ namespace Joje.Scripts
                 usableItemRep.UsableItem.hasBeenSet = true;
             }
             // usableItemRep.UsableItem._inventory.usableItems.Clear();
+            OnUsableItemUsed?.Raise();
             usableItemRep.UsableItem._inventory.Remove(usableItemRep.UsableItem);
             Destroy(usableItemRep.gameObject);
         }

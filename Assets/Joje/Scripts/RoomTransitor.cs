@@ -16,6 +16,10 @@ namespace Joje.Scripts
         {
             if (!isLocked)
             {
+                if (SceneLoader.Instance.IsLoading)
+                {
+                    return;
+                }
                 // SceneManager.LoadScene(roomToEnter.BuildIndex);
                 AudioSource.Play();
                 SceneLoader.Instance.LoadScene(roomToEnter.BuildIndex);

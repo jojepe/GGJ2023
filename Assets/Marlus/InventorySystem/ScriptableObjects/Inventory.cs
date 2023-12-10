@@ -48,7 +48,7 @@ namespace Marlus.InventorySystem.ScriptableObjects
         {
             if (IsFull)
             {
-                Debug.Log("LIMIT CLEARED!");
+                // Debug.Log("LIMIT CLEARED!");
                 onLimitCleared.Raise();
                 hasReachedLimit.Value = false;
             }
