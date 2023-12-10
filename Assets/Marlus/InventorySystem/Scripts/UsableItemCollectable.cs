@@ -1,3 +1,4 @@
+using Joje.Scripts;
 using Marlus.InventorySystem.ScriptableObjects;
 using ScriptableObjectArchitecture;
 using UnityEngine;
@@ -6,6 +7,7 @@ public class UsableItemCollectable : MonoBehaviour
 {
     [SerializeField] private UsableItem usableItem;
     [SerializeField] private ObjectGameEvent OnUsableItemCollected;
+    
     private Renderer renderer;
 
     public UsableItem UsableItem => usableItem;

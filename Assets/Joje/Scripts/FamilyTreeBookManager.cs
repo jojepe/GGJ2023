@@ -1,12 +1,15 @@
 using System;
 using System.Collections.Generic;
+using Joje.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using SceneReference = Eflatun.SceneReference.SceneReference;
 
 public class FamilyTreeBookManager : MonoBehaviour
 {
     [SerializeField] private List<NameInput> nameInputs;
+    [SerializeField] private SceneReference victoryScene;
 
     [Header("GameEvents")]
     [SerializeField] private GameEvent onFamilyTreeEnabled;
@@ -48,7 +51,8 @@ public class FamilyTreeBookManager : MonoBehaviour
         if (!HasAllNamesBeenFound) return;
         
         // print("Win Game");
-        SceneManager.LoadScene("WinGame");
+        // SceneManager.LoadScene("WinGame");
+        SceneLoader.Instance.LoadScene(victoryScene.BuildIndex);
     }
     
 }

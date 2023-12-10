@@ -1,8 +1,6 @@
-using System;
+using Joje.Scripts;
 using Marlus.InventorySystem.ScriptableObjects;
-using ScriptableObjectArchitecture;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Object = UnityEngine.Object;
 
 namespace Marlus.InventorySystem.Scripts
@@ -13,6 +11,7 @@ namespace Marlus.InventorySystem.Scripts
         private GameObject[] usableItems;
         [SerializeField] private GameObject usableItemPrefab;
         [SerializeField] private Inventory inventory;
+        [SerializeField] private RandomSoundPlayer soundPlayer;
 
         private void Start()
         {
@@ -38,6 +37,7 @@ namespace Marlus.InventorySystem.Scripts
 
                     inventory.Add(usableItemCollectable.UsableItem);
                     Destroy(usableItemCollectable.gameObject);
+                    soundPlayer.PlayRandomAudio();
                     break;
                 }
             }
