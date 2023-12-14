@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Marlus.InventorySystem.ScriptableObjects;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "UsableItem", menuName = "ScriptableObjects/UsableItem", order = 1)]
 public class UsableItem : ScriptableObject
@@ -27,6 +24,11 @@ public class UsableItem : ScriptableObject
         currentQuantity = initialQuantity;
         hasBeenCollected = false;
         hasBeenSet = false;
+    }
+
+    public void Awake()
+    {
+        hideFlags = HideFlags.DontUnloadUnusedAsset;
     }
 
     public void ReduceQuantity()

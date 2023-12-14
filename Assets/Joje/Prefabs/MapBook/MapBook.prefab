@@ -766,6 +766,7 @@ MonoBehaviour:
     sceneAssetGuidHex: 55b156e67a695ab4798dd88afc68f8c5
   onFamilyTreeEnabled: {fileID: 11400000, guid: 4b3f5d1d6f3a21c4d98a811c6a899831, type: 2}
   onFamilyTreeDisabled: {fileID: 11400000, guid: 7212b2674b11b0f478a4caa01f8b13a1, type: 2}
+  onAllNamesFound: {fileID: 11400000, guid: 5226ef7c558c2fd4a92be17e494dd09d, type: 2}
 --- !u!1 &1837597661714554987
 GameObject:
   m_ObjectHideFlags: 0

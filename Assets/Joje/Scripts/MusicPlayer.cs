@@ -1,3 +1,4 @@
+using DG.Tweening;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -27,5 +28,10 @@ public class MusicPlayer : MonoBehaviour
             _audioSource.Play();
             onSongPlayed.Raise(clip);
         }
+    }
+
+    public void FadeOut(float time)
+    {
+        _audioSource.DOFade(0f, time);
     }
 }

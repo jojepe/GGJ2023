@@ -14,6 +14,7 @@ public class FamilyTreeBookManager : MonoBehaviour
     [Header("GameEvents")]
     [SerializeField] private GameEvent onFamilyTreeEnabled;
     [SerializeField] private GameEvent onFamilyTreeDisabled;
+    [SerializeField] private GameEvent onAllNamesFound;
     
     private bool HasAllNamesBeenFound 
         => nameInputs.TrueForAll(n => n.MemoryData.hasNameBeenFound);
@@ -50,9 +51,8 @@ public class FamilyTreeBookManager : MonoBehaviour
     {
         if (!HasAllNamesBeenFound) return;
         
-        // print("Win Game");
-        // SceneManager.LoadScene("WinGame");
-        SceneLoader.Instance.LoadScene(victoryScene.BuildIndex);
+        onAllNamesFound.Raise();
+        SceneLoader.Instance.LoadScene(victoryScene.BuildIndex, 5f);
     }
     
 }

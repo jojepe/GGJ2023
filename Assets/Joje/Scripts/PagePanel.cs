@@ -48,10 +48,10 @@ namespace Joje.Scripts
 
             if (refPage != null)
             {
+                usableItemRep.UsableItem.hasBeenSet = true;
                 refPage.gameObject.SetActive(true);
                 refPage.image.SetActive(true);
                 // refPage.interactable = true;
-                usableItemRep.UsableItem.hasBeenSet = true;
             }
             // usableItemRep.UsableItem._inventory.usableItems.Clear();
             OnUsableItemUsed?.Raise();

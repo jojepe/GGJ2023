@@ -6,35 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Joje/Scenes/BaseRooms/Terrace/0 - MainRoom.unity
-    guid: d22f74c9822d2694295ba128a0463b4d
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Joje/Scenes/BaseRooms/Upper/3 - Corridor.unity
-    guid: 1805603ed3576b94c82efa5224ba6e6e
-  - enabled: 1
-    path: Assets/Joje/Scenes/BaseRooms/Terrace/2 - Bathroom.unity
-    guid: 4158daa5d08a37742aecf411b69448a5
-  - enabled: 1
-    path: Assets/Joje/Scenes/BaseItemCollection.unity
-    guid: 1ae5f225967b48243b70810d89c89c11
-  - enabled: 1
-    path: Assets/Joje/Scenes/BaseRooms/Terrace/1 - FamilyTree.unity
-    guid: 4e3070876d849bb448cdd1efd44d0418
-  - enabled: 1
-    path: Assets/Joje/Scenes/BaseRooms/Upper/5 - Bedroom.unity
-    guid: eb98f06db0b9fab49a9861a7023bd414
+    path: Assets/Joje/Scenes/---ManagerScene.unity
+    guid: c93e4cb8e3648474282f365b801c50fc
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/Upper/4 - CorridorBedroom.unity
     guid: 4651c38d0708d1c4bbdd8c8df046b6b3
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/Terrace/0 - MainRoom.unity
+    guid: d22f74c9822d2694295ba128a0463b4d
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/Upper/3 - Corridor.unity
+    guid: 1805603ed3576b94c82efa5224ba6e6e
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/Upper/6 - Bathroom.unity
     guid: 4aa76b5188b3fc14b95b76ffef6876e6
   - enabled: 1
     path: Assets/Joje/Scenes/BaseRooms/Upper/7 - ThoughtRoom.unity
     guid: 5a17e23d9e0f460438de159837b9aca1
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/Terrace/1 - FamilyTree.unity
+    guid: 4e3070876d849bb448cdd1efd44d0418
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/Terrace/2 - Bathroom.unity
+    guid: 4158daa5d08a37742aecf411b69448a5
+  - enabled: 1
+    path: Assets/Joje/Scenes/BaseRooms/Upper/5 - Bedroom.unity
+    guid: eb98f06db0b9fab49a9861a7023bd414
   - enabled: 1
     path: Assets/Joje/EndScenes/WinGame.unity
     guid: 55b156e67a695ab4798dd88afc68f8c5

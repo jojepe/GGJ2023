@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "FamilyMemberMemoryData", menuName = "ScriptableObjects/FamilyMemberMemoryData", order = 1)]

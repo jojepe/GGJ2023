@@ -17,3 +17,6 @@ MonoBehaviour:
   initialQuantity: 1
   currentQuantity: 1
   interactionIndex: 2
+  _inventory: {fileID: 0}
+  hasBeenCollected: 1
+  hasBeenSet: 1

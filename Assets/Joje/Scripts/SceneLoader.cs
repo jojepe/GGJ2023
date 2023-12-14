@@ -28,7 +28,7 @@ namespace Joje.Scripts
         {
            LoadScene(mainScene.BuildIndex, 0f);
         }
-
+        
         public void LoadScene(int sceneIndex, float? loadingTime = null, Action sceneLoadedAction = null)
         {
             if (IsLoading)
@@ -50,7 +50,6 @@ namespace Joje.Scripts
             EventSystem current = EventSystem.current;
 
             sceneLoadingSequence = DOTween.Sequence();
-            // sceneLoadingSequence.AppendCallback(() => current.enabled = false);
             sceneLoadingSequence.Append(loadingBackground.DOFade(1f, loadingTime.Value));
             sceneLoadingSequence.AppendCallback(() => SceneManager.LoadScene(sceneIndex));
             if (sceneLoadedAction != null)
@@ -58,7 +57,6 @@ namespace Joje.Scripts
                 sceneLoadingSequence.AppendCallback(sceneLoadedAction.Invoke);
             }
             sceneLoadingSequence.Append(loadingBackground.DOFade(0f, defaultEnterTime));
-            // sceneLoadingSequence.AppendCallback(() => current.enabled = true);
             sceneLoadingSequence.Play();
         }
 
