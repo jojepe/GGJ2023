@@ -7,12 +7,14 @@ using SceneReference = Eflatun.SceneReference.SceneReference;
 
 public class TimerHolder : MonoBehaviour
 {
-    [SerializeField] private float targetTime;
+    [SerializeField] private GameObject parentUI;
+    [SerializeField] private float durationMultiplier;
     [SerializeField] private float offsetTime = 5f;
     [SerializeField] private SceneReference endGameScene;
     [SerializeField] private FloatGameEvent onTimeUpdated;
-    [SerializeField] private GameObject parentUI;
+    [SerializeField] private GameEvent onTimeEnded;
     
+    private float targetTime;
     private float timer = 0;
 
     private void Awake()
@@ -22,13 +24,17 @@ public class TimerHolder : MonoBehaviour
 
     void Update()
     {
+        if (targetTime <= 0)
+        {
+            return;
+        }
         timer += Time.deltaTime;
         onTimeUpdated.Raise(1-timer/targetTime);
 
         if (timer > targetTime - offsetTime && SceneLoader.Instance.IsLoading == false)
         {
             print("No more time");
-            // SceneManager.LoadScene("EndGame");
+            onTimeEnded.Raise();
             SceneLoader.Instance.LoadScene(endGameScene.BuildIndex, offsetTime, 
                 () => gameObject.SetActive(false));
         }
@@ -36,7 +42,7 @@ public class TimerHolder : MonoBehaviour
 
     public void SetTargetTime(AudioClip audioClip)
     {
-        Debug.Log(audioClip.length);
-        targetTime = audioClip.length;
+        // Debug.Log("Duration: " + audioClip.length);
+        targetTime = audioClip.length * durationMultiplier;
     }
 }

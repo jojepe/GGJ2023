@@ -1,4 +1,6 @@
+using System;
 using ScriptableObjectArchitecture;
+using TMPro;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -17,7 +19,7 @@ public class NameInput : MonoBehaviour
     [HideInInspector] public FamilyTreeBookManager familyTreeBook;
     
     private string input;
-
+    
     public void Start()
     {
 

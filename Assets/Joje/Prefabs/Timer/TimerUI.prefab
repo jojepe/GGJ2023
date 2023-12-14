@@ -452,10 +452,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2583304d6e18b0f4aaab741f16cf98c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetTime: 60
+  parentUI: {fileID: 5143868328005855835}
+  durationMultiplier: 0
   offsetTime: -5
   endGameScene:
     sceneAsset: {fileID: 102900000, guid: 7db1c736ec43aaa46ac9173e6fa01919, type: 3}
     sceneAssetGuidHex: 7db1c736ec43aaa46ac9173e6fa01919
   onTimeUpdated: {fileID: 11400000, guid: 2f7b118e826b8614cad59c016c82a2b7, type: 2}
-  parentUI: {fileID: 5143868328005855835}
+  onTimeEnded: {fileID: 11400000, guid: f178175b70a859a4a88eb87e332af5f2, type: 2}

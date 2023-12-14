@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using ScriptableObjectArchitecture;
 using UnityEngine;
@@ -14,7 +15,10 @@ public class MusicPlayer : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        
+    }
+
+    private void Start()
+    {
         PlayRandomMusic();
     }
 
@@ -22,10 +26,10 @@ public class MusicPlayer : MonoBehaviour
     {
         if (TryGetComponent(out _audioSource))
         {
-            // PlayerPrefs.SetInt("LastPlayedSong", );
             var clip = musicSources[Random.Range(0, musicSources.Length - 1)];
             _audioSource.clip = clip;
             _audioSource.Play();
+            Debug.Log("aaa");
             onSongPlayed.Raise(clip);
         }
     }
