@@ -1,14 +1,12 @@
-using Marlus.InventorySystem.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
-using UnityEngine.Assertions;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, IPointerDownHandler
+public class Page : Selectable, IDragHandler
 {
     public UsableItem usableItem;
-    public GameObject image;
+    public new GameObject image;
     public GameObject buttons;
     [Header("ScreenLimit")] 
     public int maxX;
@@ -30,6 +28,29 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
         image.SetActive(usableItem.hasBeenSet);
     }
 
+    protected override void OnEnable()
+    {
+        if (usableItem.hasBeenSet == false)
+        {
+            return;
+        }
+        SetTransform();
+    }
+
+    private void SetTransform()
+    {
+        if (usableItem.positionOnBoard.HasValue)
+        {
+            draggingObject.position = usableItem.positionOnBoard.Value;
+        }
+
+        if (usableItem.rotationOnBoard.HasValue)
+        {
+            image.transform.rotation = usableItem.rotationOnBoard.Value;
+            buttons.transform.rotation = usableItem.rotationOnBoard.Value;
+        }
+    }
+
     public void OnDrag(PointerEventData eventData)
     {
         if (image.activeSelf == false)
@@ -45,8 +66,10 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
         {
             return;
         }
+        
         var targetPosition = globalMousePosition;
         draggingObject.position = targetPosition;
+        usableItem.positionOnBoard = targetPosition;
         // print(draggingObject.position);
     }
 
@@ -77,16 +100,16 @@ public class Page : Selectable, IDragHandler, ISelectHandler, IDeselectHandler, 
     {
         buttons.SetActive(false);
     }
-    
-    public void rotateCounterClockwise()
-    {
-        image.transform.eulerAngles += new Vector3(0,0,rotationRate);
-        onPageRotated.Raise();
-    }
 
-    public void rotateClockwise()
+    public void rotateCounterClockwise() => Rotate(false);
+
+    public void rotateClockwise() => Rotate(true);
+
+    public void Rotate(bool clockwise)
     {
-        image.transform.eulerAngles += new Vector3(0,0,-rotationRate);
+        var signal = clockwise ? -1 : 1;
+        image.transform.eulerAngles += new Vector3(0,0,signal * rotationRate);
+        usableItem.rotationOnBoard = image.transform.rotation;
         onPageRotated.Raise();
     }
 }

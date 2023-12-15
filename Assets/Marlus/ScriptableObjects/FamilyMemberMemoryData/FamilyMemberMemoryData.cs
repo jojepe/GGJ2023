@@ -4,6 +4,8 @@ using UnityEngine;
 public class FamilyMemberMemoryData : ScriptableObject
 {
     public string name;
+    public string defaultWrittenName;
+    public string writtenName;
     [SerializeField] private bool _hasNameBeenFound;
 
     public bool hasNameBeenFound
@@ -23,6 +25,12 @@ public class FamilyMemberMemoryData : ScriptableObject
 
     private void OnDisable()
     {
+        writtenName = defaultWrittenName;
         hasNameBeenFound = false;
+    }
+
+    public void SaveWrittenName(string writtenName)
+    {
+        this.writtenName = writtenName;
     }
 }

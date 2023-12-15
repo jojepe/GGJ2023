@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: AvoRosemary
   m_EditorClassIdentifier: 
   name: Rosemaria
+  defaultWrittenName: Luiz
+  writtenName: 
   _hasNameBeenFound: 0

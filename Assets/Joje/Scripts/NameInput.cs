@@ -10,41 +10,50 @@ public class NameInput : MonoBehaviour
 {
     [field: SerializeField] public FamilyMemberMemoryData MemoryData {get; private set;}
     [SerializeField] private Image picture;
+    [FormerlySerializedAs("inputField")]
     [Header("Input Field")] 
-    [FormerlySerializedAs("field")] [SerializeField] private GameObject inputField;
+    [FormerlySerializedAs("field")] [SerializeField] private GameObject inputFieldGameObject;
 
     [Header("Game Events")] 
     [SerializeField] private StringGameEvent onNameFound;
-    
-    [HideInInspector] public FamilyTreeBookManager familyTreeBook;
-    
-    private string input;
+
+    private TMP_InputField _inputField;
+    private string _input;
     
     public void Start()
     {
+        _inputField = inputFieldGameObject.GetComponent<TMP_InputField>();
 
         if (MemoryData.hasNameBeenFound)
         {
            ShowMemory();
         }
+        else
+        {
+            _inputField.text = MemoryData.writtenName;
+        }
     }
 
     public void ReadStringInput(string s)
     {
-        input = s;
-        // print(input);
-        if (MemoryData.name.ToLower().Equals(input.ToLower()) == false) return;
+        _input = s;
+        // print(_input);
+        SaveNameToMemory();
+        if (MemoryData.name.ToLower().Equals(_input.ToLower()) == false) return;
         
-        // inputField.SetActive(false);
-        // picture.gameObject.SetActive(true);
         MemoryData.hasNameBeenFound = true;
-        onNameFound.Raise(input);
+        onNameFound.Raise(_input);
         ShowMemory();
     }
 
     public void ShowMemory()
     {
-        inputField.SetActive(false);
+        inputFieldGameObject.SetActive(false);
         picture.gameObject.SetActive(true);
+    }
+
+    public void SaveNameToMemory()
+    {
+        MemoryData.SaveWrittenName(_input);
     }
 }

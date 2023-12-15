@@ -14,6 +14,8 @@ public class UsableItem : ScriptableObject
     public Inventory _inventory;
     public bool hasBeenCollected = false;
     public bool hasBeenSet = false;
+    public Vector3? positionOnBoard;
+    public Quaternion? rotationOnBoard;
 
     public int InteractionIndex => interactionIndex;
     public Sprite Icon => icon;
@@ -24,6 +26,8 @@ public class UsableItem : ScriptableObject
         currentQuantity = initialQuantity;
         hasBeenCollected = false;
         hasBeenSet = false;
+        positionOnBoard = null;
+        rotationOnBoard = null;
     }
 
     public void Awake()
