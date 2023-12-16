@@ -29,7 +29,6 @@ public class MusicPlayer : MonoBehaviour
             var clip = musicSources[Random.Range(0, musicSources.Length - 1)];
             _audioSource.clip = clip;
             _audioSource.Play();
-            Debug.Log("aaa");
             onSongPlayed.Raise(clip);
         }
     }

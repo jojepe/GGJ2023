@@ -1,8 +1,10 @@
 -> Salvar o que foi escrito na ÁRVORE GENEALÓGICA
-Salvar a posição das fotos
+-> Salvar a posição das fotos
 Menu de configurações pra volume
+Highlight e interação com escada
 Colocar efeito de fade-in nas fotos recém colocadas
 Efeito de fade-in nas fotos com nome correto na árvore
+    Mudar sfx para uma "lufada de ar" 
 Movimento ascendente e descendente dos quadros quando habilitados
 Fazer highlight médio nas portas e todos os itens interativos
 
