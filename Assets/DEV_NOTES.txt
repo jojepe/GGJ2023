@@ -1,7 +1,10 @@
 -> Salvar o que foi escrito na ÁRVORE GENEALÓGICA
 -> Salvar a posição das fotos
-Menu de configurações pra volume
-Highlight e interação com escada
+-> Menu de configurações pra volume
+-> Highlight e interação com escada
+
+Impedir interação quando menu config estiver ligado?
+Tirar audiolisteners duplicados
 
 Colocar fotos no quadro (visto de longe) conforme jogador colocar fotos
 Colocar efeito de fade-in nas fotos recém colocadas

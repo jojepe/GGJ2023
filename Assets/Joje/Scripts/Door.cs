@@ -1,8 +1,4 @@
-﻿using System;
-using Eflatun.SceneReference;
-using UnityEngine.EventSystems;
-
-namespace Joje.Scripts
+﻿namespace Joje.Scripts
 {
     public class Door : RoomTransitor
     {
