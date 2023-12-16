@@ -36,7 +36,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -210,7 +209,7 @@ AudioSource:
   m_GameObject: {fileID: 7299154044084801459}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6753505234857027454, guid: d1edb972e29cee745bbde78a0cb20c2a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 22e75e57958b4254c85c6e29a013feb8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

@@ -20,7 +20,7 @@ namespace Joje.Scripts
             // PlayerPrefs.SetInt("LastPlayedSong", );
             var clip = audioClips[Random.Range(0, audioClips.Length - 1)];
             _audioSource.clip = clip;
-            AudioSource.PlayClipAtPoint(clip, Vector3.zero); 
+            _audioSource.Play();
         }    
     }
 }

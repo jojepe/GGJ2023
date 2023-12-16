@@ -19,7 +19,6 @@ public class AudioConfig : MonoBehaviour
 
     public void SetMixerVolume(float targetVolume)
     {
-        Debug.Log("aaa");
         audioMixer.SetFloat(volumeValueAccessor, Mathf.Lerp(minMaxDecibels.x, minMaxDecibels.y, targetVolume));
     }
 

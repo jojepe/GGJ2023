@@ -600,13 +600,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9043749217148323191, guid: 47534267453b8af4bb9975f1d562bade, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 656878276}
   m_SourcePrefab: {fileID: 100100000, guid: 47534267453b8af4bb9975f1d562bade, type: 3}
 --- !u!224 &656878273 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5368474002756266710, guid: 47534267453b8af4bb9975f1d562bade, type: 3}
   m_PrefabInstance: {fileID: 656878272}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &656878274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 546224653413469232, guid: 47534267453b8af4bb9975f1d562bade, type: 3}
+  m_PrefabInstance: {fileID: 656878272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &656878275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9043749217148323191, guid: 47534267453b8af4bb9975f1d562bade, type: 3}
+  m_PrefabInstance: {fileID: 656878272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &656878276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656878275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6820eb3dd843a27418fd589c1620941e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: d1edb972e29cee745bbde78a0cb20c2a, type: 2}
+  volumeValueAccessor: SFXVolume
+  minMaxDecibels:
+    x: -80
+    y: 0
+  slider: {fileID: 656878274}
 --- !u!1 &670523101 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7898523323073996708, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
@@ -875,7 +912,7 @@ GameObject:
   - component: {fileID: 1508558595}
   - component: {fileID: 1508558594}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ConfigEnablerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,18 +925,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508558592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2002928917}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 64}
+  m_AnchoredPosition: {x: 128, y: 128}
   m_SizeDelta: {x: 128, y: 128}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508558594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -913,7 +950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -921,10 +958,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.5019608}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1235,6 +1272,7 @@ GameObject:
   - component: {fileID: 2002928915}
   - component: {fileID: 2002928914}
   - component: {fileID: 2002928918}
+  - component: {fileID: 2002928919}
   m_Layer: 5
   m_Name: ConfigCanvas
   m_TagString: Untagged
@@ -1338,6 +1376,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e60bed8aa41ce604a9fee7d9834a80b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2002928919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002928913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45fdbd97b9942489b9930fdb256d986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enablerButton: {fileID: 1508558594}
+  configIconRect: {fileID: 1508558593}
+  configPanelRect: {fileID: 1094436481}
+  tweeningTime: 0.5
+  iconRotationMultiplier: 0.5
 --- !u!1 &2123732630
 GameObject:
   m_ObjectHideFlags: 0
