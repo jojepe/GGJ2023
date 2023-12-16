@@ -591,6 +591,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: e1e1e197545265346a29e0399da570d2, type: 3}
+    - target: {fileID: 5273484545128419513, guid: d33174a7941277a43ad138c35e002406, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 6753505234857027454, guid: d1edb972e29cee745bbde78a0cb20c2a, type: 2}
     - target: {fileID: 5470417503397924313, guid: d33174a7941277a43ad138c35e002406, type: 3}
       propertyPath: m_Name
       value: InstantCrowdCheerPlayer
@@ -841,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 5273484545128419513, guid: d33174a7941277a43ad138c35e002406, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 24300002, guid: 06b5f72139578ff46b8adf86a571a968, type: 2}
+      objectReference: {fileID: 3986458362439075514, guid: d1edb972e29cee745bbde78a0cb20c2a, type: 2}
     - target: {fileID: 5470417503397924313, guid: d33174a7941277a43ad138c35e002406, type: 3}
       propertyPath: m_Name
       value: InstantWinMusicPlayer

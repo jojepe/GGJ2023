@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Collider))]
+// [RequireComponent(typeof(Collider))]
 public class InteractableOutline : MonoBehaviour
 {
     [SerializeField] public BoolReference[] activationConditions;

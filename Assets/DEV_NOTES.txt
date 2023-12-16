@@ -3,6 +3,7 @@
 Menu de configurações pra volume
 Highlight e interação com escada
 
+Colocar fotos no quadro (visto de longe) conforme jogador colocar fotos
 Colocar efeito de fade-in nas fotos recém colocadas
 Efeito de fade-in nas fotos com nome correto na árvore
     Mudar sfx para uma "lufada de ar" com variações
