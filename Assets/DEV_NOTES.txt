@@ -3,10 +3,13 @@
 -> Menu de configurações pra volume
 -> Highlight e interação com escada
 
-Impedir interação quando menu config estiver ligado?
 Tirar audiolisteners duplicados
+Checar input mobile
+    Corrigir interface pra mobile
 
+Reiniciar jogo quando jogador "perder"
 Colocar fotos no quadro (visto de longe) conforme jogador colocar fotos
+Impedir interação quando menu config estiver ligado?
 Colocar efeito de fade-in nas fotos recém colocadas
 Efeito de fade-in nas fotos com nome correto na árvore
     Mudar sfx para uma "lufada de ar" com variações
