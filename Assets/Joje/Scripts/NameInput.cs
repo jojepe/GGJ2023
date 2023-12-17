@@ -1,7 +1,6 @@
-using System;
+using System.Runtime.InteropServices;
 using ScriptableObjectArchitecture;
 using TMPro;
-using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -17,12 +16,13 @@ public class NameInput : MonoBehaviour
     [Header("Game Events")] 
     [SerializeField] private StringGameEvent onNameFound;
 
-    private TMP_InputField _inputField;
+    private InputField _inputField;
     private string _input;
-    
+
     public void Start()
     {
-        _inputField = inputFieldGameObject.GetComponent<TMP_InputField>();
+        _inputField = inputFieldGameObject.GetComponent<InputField>();
+        picture.sprite = MemoryData.representation;
 
         if (MemoryData.hasNameBeenFound)
         {
@@ -30,7 +30,13 @@ public class NameInput : MonoBehaviour
         }
         else
         {
+            HideMemory();
+            if (_inputField == null)
+            {
+                return;
+            }
             _inputField.text = MemoryData.writtenName;
+            _inputField.onValueChanged.AddListener(ReadStringInput);
         }
     }
 
@@ -52,8 +58,15 @@ public class NameInput : MonoBehaviour
         picture.gameObject.SetActive(true);
     }
 
+    public void HideMemory()
+    {
+        inputFieldGameObject.SetActive(true);
+        picture.gameObject.SetActive(false);
+    }
+
     public void SaveNameToMemory()
     {
         MemoryData.SaveWrittenName(_input);
     }
+    
 }

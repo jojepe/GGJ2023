@@ -6,6 +6,7 @@ public class FamilyMemberMemoryData : ScriptableObject
     public string name;
     public string defaultWrittenName;
     public string writtenName;
+    public Sprite representation;
     [SerializeField] private bool _hasNameBeenFound;
 
     public bool hasNameBeenFound

@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: TiaJaqueline
   m_EditorClassIdentifier: 
   name: Jaqueline
-  hasNameBeenFound: 0
+  defaultWrittenName: 
+  writtenName: Jaqueline
+  representation: {fileID: 21300000, guid: 1b1286d5bca5fb14ea24281ae27c492a, type: 3}
+  _hasNameBeenFound: 0

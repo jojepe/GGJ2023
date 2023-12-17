@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd128e56b9676b44c99ba51869554c47, type: 3}
-  m_Name: MaeMarilia
+  m_Name: MaeMarina
   m_EditorClassIdentifier: 
   name: Marina
-  _hasNameBeenFound: 1
+  defaultWrittenName: 
+  writtenName: Marina
+  representation: {fileID: 21300000, guid: 90a1cba293f4af842b11a4fff34dcbaa, type: 3}
+  _hasNameBeenFound: 0

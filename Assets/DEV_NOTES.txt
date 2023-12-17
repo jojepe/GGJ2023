@@ -3,17 +3,22 @@
 -> Menu de configurações pra volume
 -> Highlight e interação com escada
 
-Tirar audiolisteners duplicados
-Checar input mobile
-    Corrigir interface pra mobile
+-> Tirar audiolisteners duplicados
+-> Checar input mobile
+Corrigir interface pra mobile
+    Trocar por inputfield legacy, criar prefabs;
+     corrigir posicionamento;
+    Corrigir estética
+    Corrigir posicionamento de fotos
+Impedir interação quando menu config estiver ligado
 
+
+Fazer highlight médio nas portas e todos os itens interativos (Somente pra mobile)
 Reiniciar jogo quando jogador "perder"
 Colocar fotos no quadro (visto de longe) conforme jogador colocar fotos
-Impedir interação quando menu config estiver ligado?
 Colocar efeito de fade-in nas fotos recém colocadas
 Efeito de fade-in nas fotos com nome correto na árvore
     Mudar sfx para uma "lufada de ar" com variações
 Movimento ascendente e descendente dos quadros quando habilitados
-Fazer highlight médio nas portas e todos os itens interativos
 
 Fotos devem ter o highlight desligado caso inventário esteja cheio

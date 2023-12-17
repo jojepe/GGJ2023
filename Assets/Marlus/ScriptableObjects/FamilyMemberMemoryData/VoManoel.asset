@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: VoManoel
   m_EditorClassIdentifier: 
   name: Manoel
-  hasNameBeenFound: 0
+  defaultWrittenName: 
+  writtenName: Manoel
+  representation: {fileID: 21300000, guid: a9af4244a42732640afeeed130c9f64d, type: 3}
+  _hasNameBeenFound: 0

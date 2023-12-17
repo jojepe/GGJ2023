@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: TioMarcelo
   m_EditorClassIdentifier: 
   name: Marcelo
-  hasNameBeenFound: 0
+  defaultWrittenName: 
+  writtenName: Marcelo
+  representation: {fileID: 21300000, guid: 4e3363adfc25834419a00673c1aeb90a, type: 3}
+  _hasNameBeenFound: 0
