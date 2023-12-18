@@ -21,10 +21,15 @@ public class InteractableOutline : MonoBehaviour
             Toggle(Array.TrueForAll(activationConditions, c => c.Value == true));
         }
     }
+    
+    private bool AreAllConditionsMet()
+    {
+        return activationConditions.Length <= 0 || Array.TrueForAll(activationConditions, c => c.Value);
+    }
 
     public void OnMouseEnter()
     {
-        if (IsEnabled == false)
+        if (IsEnabled == false || AreAllConditionsMet() == false)
         {
             return;
         }

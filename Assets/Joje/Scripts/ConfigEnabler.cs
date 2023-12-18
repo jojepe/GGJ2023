@@ -1,5 +1,6 @@
 ﻿using System;
 using DG.Tweening;
+using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,12 +14,21 @@ namespace Joje.Scripts
         [SerializeField] private float tweeningTime;
         [SerializeField] private float iconRotationMultiplier;
 
+        [Header("Referenced Variables")] 
+        [SerializeField] private BoolReference isConfigShown;
+        [SerializeField] private BoolReference isConfigHidden;
+        [SerializeField] private GameEvent onConfigShown;
+        [SerializeField] private GameEvent onConfigHidden;
+
         private bool isConfigEnabled = false;
         private Sequence tweeningSequence;
 
         private void Awake()
         {
             isConfigEnabled = false;
+            isConfigHidden.Value = true;
+            isConfigShown.Value = false;
+            
             configPanelRect.anchoredPosition = TargetRetractedPanelPosition;
             enablerButton.onClick.AddListener(Toggle);
         }
@@ -54,7 +64,14 @@ namespace Joje.Scripts
             var targetRotation = new Vector3(0, 0, 360 * iconRotationMultiplier);
             tweeningSequence.Join(configIconRect.DORotate(targetRotation, tweeningTime, RotateMode.LocalAxisAdd));
             tweeningSequence.Join(configPanelRect.DOAnchorPos(Vector2.zero, tweeningTime));
+            tweeningSequence.onPlay += () =>
+            {
+                isConfigShown.Value = true;
+                isConfigHidden.Value = false;
+                onConfigShown.Raise();
+            };
             tweeningSequence.Play();
+            
         }
 
         private void Hide()
@@ -64,6 +81,12 @@ namespace Joje.Scripts
             var targetRotation = new Vector3(0, 0, -360 * iconRotationMultiplier);
             tweeningSequence.Join(configIconRect.DORotate(targetRotation, tweeningTime, RotateMode.LocalAxisAdd));
             tweeningSequence.Join(configPanelRect.DOAnchorPos(TargetRetractedPanelPosition, tweeningTime));
+            tweeningSequence.onComplete += () =>
+            {
+                isConfigShown.Value = false;
+                isConfigHidden.Value = true;
+                onConfigHidden.Raise();
+            };
             tweeningSequence.Play();
         }
     }

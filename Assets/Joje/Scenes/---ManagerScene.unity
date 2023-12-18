@@ -834,6 +834,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3482054430697960159, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482054430697960159, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482054430697960159, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -540
+      objectReference: {fileID: 0}
     - target: {fileID: 5903096068817547163, guid: a79dfa4cf96789046bfb406000c4e5e6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1447,7 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
+  m_BlockingObjects: 2
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1547,6 +1559,16 @@ MonoBehaviour:
   configPanelRect: {fileID: 1094436481}
   tweeningTime: 0.5
   iconRotationMultiplier: 0.5
+  isConfigShown:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: 373b4271e975a2a48a4f8a629b51f4db, type: 2}
+  isConfigHidden:
+    _useConstant: 0
+    _constantValue: 0
+    _variable: {fileID: 11400000, guid: ed5fd6f68bfb8e841880f2e9c5a92142, type: 2}
+  onConfigShown: {fileID: 11400000, guid: 5cdecdfccc82c274a8488c73541fcabd, type: 2}
+  onConfigHidden: {fileID: 11400000, guid: 36dd2c50ddccf354db07c313378f9730, type: 2}
 --- !u!1 &2123732630
 GameObject:
   m_ObjectHideFlags: 0
