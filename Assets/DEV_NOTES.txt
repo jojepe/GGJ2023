@@ -5,16 +5,17 @@
 
 -> Tirar audiolisteners duplicados
 -> Checar input mobile
-Corrigir interface pra mobile
-    Trocar por inputfield legacy, criar prefabs;
-     corrigir posicionamento;
-    Corrigir estética
-    Corrigir posicionamento de fotos
+-> Corrigir interface pra mobile
+    -> Trocar por inputfield legacy, criar prefabs;
+     -> corrigir posicionamento;
+     ->> Corrigir estética
+    -> Corrigir posicionamento de fotos
 Impedir interação quando menu config estiver ligado
 
+Créditos
 
-Fazer highlight médio nas portas e todos os itens interativos (Somente pra mobile)
 Reiniciar jogo quando jogador "perder"
+Fazer highlight médio nas portas e todos os itens interativos (Somente pra mobile)
 Colocar fotos no quadro (visto de longe) conforme jogador colocar fotos
 Colocar efeito de fade-in nas fotos recém colocadas
 Efeito de fade-in nas fotos com nome correto na árvore

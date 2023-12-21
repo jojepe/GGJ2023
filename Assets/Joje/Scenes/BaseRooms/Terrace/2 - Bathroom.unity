@@ -1021,10 +1021,6 @@ PrefabInstance:
       value: Porta
       objectReference: {fileID: 0}
     - target: {fileID: 8788599092630875811, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
-      propertyPath: activationConditions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8788599092630875811, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: activationConditions.Array.data[0]._variable
       value: 
       objectReference: {fileID: 11400000, guid: ed5fd6f68bfb8e841880f2e9c5a92142, type: 2}

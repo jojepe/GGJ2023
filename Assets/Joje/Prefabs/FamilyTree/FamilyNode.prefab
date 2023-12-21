@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9686649, b: 0.38113207, a: 1}
+  m_Color: {r: 0.9245283, g: 0.9085245, b: 0.46575293, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_LineType: 0
   m_HideMobileInput: 0
   m_CharacterValidation: 0
-  m_CharacterLimit: 12
+  m_CharacterLimit: 9
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c96518631c8cd0147b01519e03ab1837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <MemoryData>k__BackingField: {fileID: 0}
+  <MemoryData>k__BackingField: {fileID: 11400000, guid: ed7908c5c2119e245bd63b91a8637d58, type: 2}
   picture: {fileID: 1686155785822135821}
   inputFieldGameObject: {fileID: 3472808083248347136}
   onNameFound: {fileID: 11400000, guid: 73d278e773e49f34592e07efd080463b, type: 2}
@@ -420,7 +420,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 51d0f08d010d4d549a3e5828e6f00944, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1

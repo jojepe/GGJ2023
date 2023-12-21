@@ -2,17 +2,19 @@
 using System.Linq;
 using ScriptableObjectArchitecture;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Joje.Scripts
 {
-    public class Door : RoomTransitor
+    public class Door : RoomTransitor, IPointerDownHandler
     {
         [SerializeField] public BoolReference[] activationConditions;
 
-        private void OnMouseDown()
+        public void OnPointerDown(PointerEventData eventData)
         {
             if (this.enabled == false || AreAllConditionsMet() == false) 
             {
+                Debug.Log("aaa");
                 return;
             }
             EnterRoom();

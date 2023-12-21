@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using ScriptableObjectArchitecture;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -9,8 +10,14 @@ public class InteractableOutline : MonoBehaviour
 {
     [SerializeField] public BoolReference[] activationConditions;
     public bool IsEnabled = true;
+    [SerializeField] private float outlineTransitionTime;
+    [SerializeField] private Ease outlineTransitionEase;
+    
     private Renderer sprite;
-
+    private bool canToggleOutlineOn = true; 
+    private Tween onTween;
+    private Tween offTween;
+    
     private void Start()
     {
         IsEnabled = true;
@@ -20,6 +27,8 @@ public class InteractableOutline : MonoBehaviour
         {
             Toggle(Array.TrueForAll(activationConditions, c => c.Value == true));
         }
+
+        canToggleOutlineOn = true;
     }
     
     private bool AreAllConditionsMet()
@@ -27,9 +36,10 @@ public class InteractableOutline : MonoBehaviour
         return activationConditions.Length <= 0 || Array.TrueForAll(activationConditions, c => c.Value);
     }
 
-    public void OnMouseEnter()
+    public void OnMouseOver()
     {
-        if (IsEnabled == false || AreAllConditionsMet() == false)
+        
+        if (IsEnabled == false || AreAllConditionsMet() == false || EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
@@ -45,12 +55,22 @@ public class InteractableOutline : MonoBehaviour
 
     private void ShowVisualization()
     {
-        sprite.material.SetFloat("_Thic", 0.8f);
+
+        if (canToggleOutlineOn == false)
+        {
+            return;
+        }
+        
+        offTween.Kill();
+        onTween = sprite.material.DOFloat(0.8f, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
+        canToggleOutlineOn = false;
     }
 
     private void HideVisualization()
     {
-        sprite.material.SetFloat("_Thic", 0.0f);
+        onTween.Kill();
+        offTween = sprite.material.DOFloat(0.0f, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
+        canToggleOutlineOn = true;
     }
 
     public void Toggle(bool value)
