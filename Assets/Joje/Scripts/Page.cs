@@ -9,9 +9,9 @@ public class Page : Selectable, IDragHandler
     public new GameObject image;
     public GameObject buttons;
     [Header("ScreenLimit")] 
-    public int maxX;
+    // public int maxX;
     public int minX;
-    public int maxY;
+    // public int maxY;
     public int minY;
     [Header("GameEvents")]
     [SerializeField] private GameEvent onPageSelected;
@@ -62,6 +62,11 @@ public class Page : Selectable, IDragHandler
         {
             return;
         }
+
+        var maxX = Screen.width - minX;
+        // Debug.Log("maxX = " + maxX);
+        var maxY = Screen.height - minY;
+        // Debug.Log("maxY = " + maxY);
         if (globalMousePosition.x > maxX || globalMousePosition.x < minX || globalMousePosition.y > maxY || globalMousePosition.y < minY)
         {
             return;
