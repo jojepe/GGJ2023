@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AvoRosemary
   m_EditorClassIdentifier: 
   name: Rosemaria
-  defaultWrittenName: Luiz
-  writtenName: Rosemaria
+  defaultWrittenName: 
+  writtenName: 
   representation: {fileID: 21300000, guid: 6e850a8c4e3676344aae7f7d0dddb77c, type: 3}
   _hasNameBeenFound: 0
