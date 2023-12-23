@@ -4,7 +4,6 @@ using Eflatun.SceneReference;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Joje.Scripts
@@ -15,6 +14,7 @@ namespace Joje.Scripts
         [SerializeField] private Image loadingBackground;
         [SerializeField] private float defaultExitTime;
         [SerializeField] private float defaultEnterTime;
+        [SerializeField] private GameObject[] deletableGameObjects;
 
         private Sequence sceneLoadingSequence;
 
@@ -22,6 +22,15 @@ namespace Joje.Scripts
         { 
             base.Awake();
             LoadMainScene();
+        }
+
+        public void ReloadGame()
+        {
+            Array.ForEach(deletableGameObjects, Destroy);
+            ResetInstance();
+            SceneManager.LoadScene(0);
+            // LoadMainScene();
+            Destroy(gameObject);
         }
 
         public void LoadMainScene()
@@ -47,8 +56,6 @@ namespace Joje.Scripts
             if (loadingTime.HasValue == false)
                 loadingTime = defaultExitTime;
             
-            EventSystem current = EventSystem.current;
-
             sceneLoadingSequence = DOTween.Sequence();
             sceneLoadingSequence.Append(loadingBackground.DOFade(1f, loadingTime.Value));
             sceneLoadingSequence.AppendCallback(() => SceneManager.LoadScene(sceneIndex));

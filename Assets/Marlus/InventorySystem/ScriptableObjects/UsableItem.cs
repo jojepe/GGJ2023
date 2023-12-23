@@ -1,11 +1,11 @@
 using System;
+using Joje.Scripts;
 using Marlus.InventorySystem.ScriptableObjects;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "UsableItem", menuName = "ScriptableObjects/UsableItem", order = 1)]
 public class UsableItem : ScriptableObject
 {
-    //TODO Conectar com os ELEMENTOS OPERÁVEIS
     [SerializeField] private string name;
     [SerializeField] private Sprite icon;
     [SerializeField] private int initialQuantity = 1;
@@ -23,11 +23,7 @@ public class UsableItem : ScriptableObject
 
     public void OnEnable()
     {
-        currentQuantity = initialQuantity;
-        hasBeenCollected = false;
-        hasBeenSet = false;
-        positionOnBoard = null;
-        rotationOnBoard = null;
+        Reset();
     }
 
     public void Awake()
@@ -39,6 +35,15 @@ public class UsableItem : ScriptableObject
     {
         currentQuantity--;
     }
-    
 
+
+    public void Reset()
+    {
+        currentQuantity = initialQuantity;
+        hasBeenCollected = false;
+        hasBeenSet = false;
+        positionOnBoard = null;
+        rotationOnBoard = null;
+        Debug.Log($"{name} has been resetted");
+    }
 }

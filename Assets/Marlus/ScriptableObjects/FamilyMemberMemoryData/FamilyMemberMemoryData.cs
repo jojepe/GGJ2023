@@ -26,12 +26,17 @@ public class FamilyMemberMemoryData : ScriptableObject
 
     private void OnDisable()
     {
-        writtenName = defaultWrittenName;
-        hasNameBeenFound = false;
+        Reset();
     }
 
     public void SaveWrittenName(string writtenName)
     {
         this.writtenName = writtenName;
+    }
+
+    public void Reset()
+    {
+        writtenName = defaultWrittenName;
+        hasNameBeenFound = false;
     }
 }

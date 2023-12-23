@@ -5,17 +5,12 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(AudioSource))]
-public class MusicPlayer : MonoBehaviour
+public class MusicPlayer : Singleton<MusicPlayer>
 {
     [SerializeField] private AudioClip[] musicSources;
     [SerializeField] private AudioClipGameEvent onSongPlayed;
 
     private AudioSource _audioSource;
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
 
     private void Start()
     {
