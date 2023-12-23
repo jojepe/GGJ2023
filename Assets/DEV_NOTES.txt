@@ -15,8 +15,9 @@
 -> Créditos
 
 -> Reiniciar jogo quando jogador "perder"
-   -> Tentar mudar imagem do relógio
+    Tentar mudar imagem do relógio
 Fazer highlight médio nas portas e todos os itens interativos (Somente pra mobile)
+    https://github.com/gigacee/CheckIfMobileForUnityWebGL
 Colocar fotos no quadro (visto de longe) conforme jogador colocar fotos
 Colocar efeito de fade-in nas fotos recém colocadas
 Efeito de fade-in nas fotos com nome correto na árvore

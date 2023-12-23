@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 using DG.Tweening;
 using ScriptableObjectArchitecture;
 using UnityEngine;
@@ -15,8 +16,18 @@ public class InteractableOutline : MonoBehaviour
     
     private Renderer sprite;
     private bool canToggleOutlineOn = true; 
+    private bool isMobile = false;
     private Tween onTween;
     private Tween offTween;
+    
+    private const float minOutline = 0.0f;
+    private const float minOutline_WebGL = 0.0f;
+    private const float maxOutline = 0.8f;
+
+#if !UNITY_EDITOR && UNITY_WEBGL
+        [DllImport("__Internal")]
+        private static extern bool IsMobile();
+#endif
     
     private void Start()
     {
@@ -29,6 +40,11 @@ public class InteractableOutline : MonoBehaviour
         }
 
         canToggleOutlineOn = true;
+        
+        
+#if !UNITY_EDITOR && UNITY_WEBGL
+        isMobile = IsMobile();
+#endif
     }
     
     private bool AreAllConditionsMet()
@@ -62,14 +78,14 @@ public class InteractableOutline : MonoBehaviour
         }
         
         offTween.Kill();
-        onTween = sprite.material.DOFloat(0.8f, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
+        onTween = sprite.material.DOFloat(maxOutline, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
         canToggleOutlineOn = false;
     }
 
     private void HideVisualization()
     {
         onTween.Kill();
-        offTween = sprite.material.DOFloat(0.0f, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
+        offTween = sprite.material.DOFloat(isMobile ? minOutline_WebGL : minOutline, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
         canToggleOutlineOn = true;
     }
 
