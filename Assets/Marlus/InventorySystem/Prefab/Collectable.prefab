@@ -239,3 +239,6 @@ MonoBehaviour:
   IsEnabled: 1
   outlineTransitionTime: 0.1
   outlineTransitionEase: 2
+  minOutline: 0.1
+  minOutline_WebGL: 0.1
+  maxOutline: 0.8

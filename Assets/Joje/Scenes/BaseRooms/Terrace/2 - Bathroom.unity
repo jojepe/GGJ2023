@@ -1010,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: activationConditions.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8538799853699846855, guid: 5aa88660d6569c24ba5e10e6838a7b73, type: 3}
       propertyPath: activationConditions.Array.data[0]._variable

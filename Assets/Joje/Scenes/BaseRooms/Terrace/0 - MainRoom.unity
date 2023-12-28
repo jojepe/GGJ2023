@@ -1073,7 +1073,7 @@ GameObject:
   - component: {fileID: 794579482}
   - component: {fileID: 794579481}
   m_Layer: 0
-  m_Name: Obj1
+  m_Name: Lustre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1143,7 +1143,8 @@ Transform:
   m_LocalPosition: {x: -0, y: 1.613, z: -0.298}
   m_LocalScale: {x: 0.20806745, y: 0.20806745, z: 0.20806745}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1014678725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &816340555
@@ -1332,7 +1333,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8962264, g: 0.48811492, b: 0.21560161, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.2
   m_Range: 134.38892
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1390,12 +1391,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014678722}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.841, z: -0.67}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 794579482}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1155395744
 GameObject:
@@ -3308,7 +3309,6 @@ SceneRoots:
   - {fileID: 1814894704}
   - {fileID: 1401697684}
   - {fileID: 8937043056809909679}
-  - {fileID: 1014678725}
   - {fileID: 554086477}
   - {fileID: 794579482}
   - {fileID: 1155395746}

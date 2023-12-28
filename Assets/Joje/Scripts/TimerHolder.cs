@@ -1,8 +1,6 @@
-using System;
 using Joje.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using SceneReference = Eflatun.SceneReference.SceneReference;
 
 public class TimerHolder : MonoBehaviour

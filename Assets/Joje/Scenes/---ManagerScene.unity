@@ -191,6 +191,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 201871103342225831, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201871103342225831, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2a0f6dab2f95df845a1f1847913f7b1b, type: 3}
+    - target: {fileID: 201871103342225831, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.937
+      objectReference: {fileID: 0}
+    - target: {fileID: 201871103342225831, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_FillMethod
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 201871103342225831, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 639772198234273358, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 639772198234273358, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 639772198234273358, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 639772198234273358, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2339865060113303528, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
       propertyPath: offsetTime
       value: 5
@@ -201,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2339865060113303528, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
       propertyPath: durationMultiplier
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3199413901606761193, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
       propertyPath: m_Pivot.x
@@ -287,9 +323,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3548113594199399226, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548113594199399226, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.b
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548113594199399226, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.g
+      value: 0.1981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3548113594199399226, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: m_Color.r
+      value: 0.1981132
+      objectReference: {fileID: 0}
     - target: {fileID: 5143868328005855835, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
       propertyPath: m_Name
       value: TimerUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965164155306729399, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1239290901}
+    - target: {fileID: 6965164155306729399, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetAlpha
+      objectReference: {fileID: 0}
+    - target: {fileID: 6965164155306729399, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.CanvasRenderer, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8816003146399602570, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
       propertyPath: m_Pivot.x
@@ -987,6 +1051,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094436480}
   m_CullTransparentMesh: 1
+--- !u!222 &1239290901 stripped
+CanvasRenderer:
+  m_CorrespondingSourceObject: {fileID: 3273540485439082261, guid: 51f2835d6f5888c48be797e9e930b3d7, type: 3}
+  m_PrefabInstance: {fileID: 318650323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1311765752
 GameObject:
   m_ObjectHideFlags: 0

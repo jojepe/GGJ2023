@@ -13,6 +13,9 @@ public class InteractableOutline : MonoBehaviour
     public bool IsEnabled = true;
     [SerializeField] private float outlineTransitionTime;
     [SerializeField] private Ease outlineTransitionEase;
+    [SerializeField] private float minOutline = 0.0f;
+    [SerializeField] private float minOutline_WebGL = 0.0f;
+    [SerializeField] private float maxOutline = 0.8f;
     
     private Renderer sprite;
     private bool canToggleOutlineOn = true; 
@@ -20,9 +23,7 @@ public class InteractableOutline : MonoBehaviour
     private Tween onTween;
     private Tween offTween;
     
-    private const float minOutline = 0.0f;
-    private const float minOutline_WebGL = 0.0f;
-    private const float maxOutline = 0.8f;
+
 
 #if !UNITY_EDITOR && UNITY_WEBGL
         [DllImport("__Internal")]
@@ -38,6 +39,14 @@ public class InteractableOutline : MonoBehaviour
         {
             Toggle(Array.TrueForAll(activationConditions, c => c.Value == true));
         }
+        
+        // Array.ForEach(activationConditions, c =>
+        // {
+        //     c.AddListener(() =>
+        //     {
+        //         Toggle(c.Value);
+        //     });
+        // });
 
         canToggleOutlineOn = true;
         
@@ -92,5 +101,13 @@ public class InteractableOutline : MonoBehaviour
     public void Toggle(bool value)
     {
         IsEnabled = value;
+        canToggleOutlineOn = value;
+
+        if (value == true)
+        {
+            return;
+        }
+        onTween.Kill();
+        offTween = sprite.material.DOFloat(0, "_Thic", outlineTransitionTime).SetEase(outlineTransitionEase);
     }
 }

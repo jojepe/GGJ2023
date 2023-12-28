@@ -36,7 +36,7 @@ namespace Marlus.InventorySystem.ScriptableObjects
             usableItem.hasBeenCollected = true;
             if (IsFull)
             {
-                Debug.Log("LIMIT REACHED!");
+                // Debug.Log("LIMIT REACHED!");
                 hasReachedLimit.Value = true;
                 onLimitReached.Raise();
                 hasSpace.Value = false;
