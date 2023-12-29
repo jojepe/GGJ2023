@@ -353,6 +353,7 @@ MonoBehaviour:
   <MemoryData>k__BackingField: {fileID: 11400000, guid: ed7908c5c2119e245bd63b91a8637d58, type: 2}
   picture: {fileID: 1686155785822135821}
   inputFieldGameObject: {fileID: 3472808083248347136}
+  fadeDuration: 0.25
   onNameFound: {fileID: 11400000, guid: 73d278e773e49f34592e07efd080463b, type: 2}
 --- !u!1 &7571674026566224195
 GameObject:

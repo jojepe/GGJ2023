@@ -386,6 +386,9 @@ MonoBehaviour:
   IsEnabled: 1
   outlineTransitionTime: 0.1
   outlineTransitionEase: 2
+  minOutline: 0
+  minOutline_WebGL: 0
+  maxOutline: 0.8
 --- !u!114 &108605217 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -1714983752910282871, guid: 2620512a5e002c8478e9a2da818156ed, type: 3}
@@ -1502,6 +1505,9 @@ MonoBehaviour:
   IsEnabled: 1
   outlineTransitionTime: 0.1
   outlineTransitionEase: 2
+  minOutline: 0
+  minOutline_WebGL: 0
+  maxOutline: 0.8
 --- !u!61 &1155395748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1972,6 +1978,7 @@ MonoBehaviour:
   onInteractablePanelEnabled: {fileID: 11400000, guid: 4b3f5d1d6f3a21c4d98a811c6a899831, type: 2}
   onInteractablePanelDisabled: {fileID: 11400000, guid: 7212b2674b11b0f478a4caa01f8b13a1, type: 2}
   OnUsableItemUsed: {fileID: 11400000, guid: 8ec2d8a096d911247aec370106832f3c, type: 2}
+  fadeDuration: 0.25
 --- !u!114 &1266183749
 MonoBehaviour:
   m_ObjectHideFlags: 0

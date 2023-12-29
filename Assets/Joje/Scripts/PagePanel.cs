@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using JetBrains.Annotations;
 using Marlus.InventorySystem.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
+using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 namespace Joje.Scripts
@@ -12,14 +14,11 @@ namespace Joje.Scripts
     public class PagePanel : InteractablePanel
     {
         [SerializeField] [CanBeNull] private GameEvent OnUsableItemUsed;
+        [SerializeField] private float fadeDuration;
         
         private List<Page> pages;
         private Page refPage;
-
-        private void Awake()
-        {
-            // gameObject.SetActive(false);
-        }
+        private Sequence fadeSequence;
 
         private void Start()
         {
@@ -41,22 +40,32 @@ namespace Joje.Scripts
         
         public void TryShowUsableItem(Object _object)
         {
+            fadeSequence = DOTween.Sequence();
             var usableItemRep = (UsableItemRepresentation)_object;
 
+            
             refPage = pages.FirstOrDefault(p =>
                 usableItemRep.UsableItem.InteractionIndex == p.usableItem.InteractionIndex);
 
             if (refPage != null)
             {
-                usableItemRep.UsableItem.hasBeenSet = true;
+                fadeSequence.Append(usableItemRep.image.DOFade(0f, fadeDuration));
+
+                fadeSequence.onComplete += () => usableItemRep.UsableItem.hasBeenSet = true;
                 refPage.gameObject.SetActive(true);
                 refPage.image.SetActive(true);
-                // refPage.interactable = true;
+                if (refPage.image.TryGetComponent(out Image image))
+                {
+                    Color color = image.color;
+                    color.a = 0f;
+                    image.color = color;
+                    fadeSequence.Join(image.DOFade(1f, fadeDuration));
+                }
             }
-            // usableItemRep.UsableItem._inventory.usableItems.Clear();
-            OnUsableItemUsed?.Raise();
-            usableItemRep.UsableItem._inventory.Remove(usableItemRep.UsableItem);
-            Destroy(usableItemRep.gameObject);
+            fadeSequence.onComplete += () => OnUsableItemUsed?.Raise();
+            fadeSequence.onComplete += () => usableItemRep.UsableItem._inventory.Remove(usableItemRep.UsableItem);
+            fadeSequence.onComplete += () => Destroy(usableItemRep.gameObject);
+            fadeSequence.Play();
         }
     }
 }

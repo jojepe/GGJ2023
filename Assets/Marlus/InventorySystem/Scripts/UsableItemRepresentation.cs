@@ -11,7 +11,7 @@ namespace Marlus.InventorySystem.Scripts
         public ObjectGameEvent OnTryUseItem;
 
         private UsableItem usableItem;
-        private Image image;
+        public Image image;
 
         public bool CanBeUsed => usableItem != null && image.sprite != null; 
         public UsableItem UsableItem => usableItem;

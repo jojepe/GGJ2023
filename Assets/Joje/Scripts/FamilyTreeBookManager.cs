@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
 using Joje.Scripts;
 using ScriptableObjectArchitecture;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using SceneReference = Eflatun.SceneReference.SceneReference;
 
 public class FamilyTreeBookManager : MonoBehaviour

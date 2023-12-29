@@ -1,6 +1,5 @@
-using System.Runtime.InteropServices;
+using DG.Tweening;
 using ScriptableObjectArchitecture;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -12,12 +11,15 @@ public class NameInput : MonoBehaviour
     [FormerlySerializedAs("inputField")]
     [Header("Input Field")] 
     [FormerlySerializedAs("field")] [SerializeField] private GameObject inputFieldGameObject;
-
+    [SerializeField] private float fadeDuration = 0.25f;
+    
     [Header("Game Events")] 
     [SerializeField] private StringGameEvent onNameFound;
 
     private InputField _inputField;
     private string _input;
+
+    private Sequence fadeSequence;
 
     public void Start()
     {
@@ -54,8 +56,20 @@ public class NameInput : MonoBehaviour
 
     public void ShowMemory()
     {
-        inputFieldGameObject.SetActive(false);
+        fadeSequence.Kill();
+        fadeSequence = DOTween.Sequence();
+        
+        fadeSequence.Append(_inputField.image.DOFade(0f, fadeDuration));
+        
         picture.gameObject.SetActive(true);
+        Color color = picture.color;
+        color.a = 0f;
+        picture.color = color;
+        fadeSequence.Join(picture.DOFade(1f, fadeDuration));
+
+        fadeSequence.onComplete += () =>   inputFieldGameObject.SetActive(false);
+        
+        fadeSequence.Play();
     }
 
     public void HideMemory()
